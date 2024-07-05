@@ -14,7 +14,7 @@
     <loc>http://localhost:1313/posts/blog/</loc>
     <lastmod>2022-05-05T00:18:23+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/test/</loc>
+    <loc>http://localhost:1313/posts/unclassified/</loc>
     <lastmod>2022-05-05T00:18:15+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
@@ -38,7 +38,7 @@
     <loc>http://localhost:1313/posts/life/life/</loc>
     <lastmod>2022-05-05T00:18:15+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/test/life/</loc>
+    <loc>http://localhost:1313/posts/unclassified/life/</loc>
     <lastmod>2022-05-05T00:18:15+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/read/</loc>
@@ -71,7 +71,7 @@
     <loc>http://localhost:1313/posts/tech/tech1/</loc>
     <lastmod>2025-05-05T00:17:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/test/test/</loc>
+    <loc>http://localhost:1313/posts/unclassified/test/</loc>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
   </url><url>
