@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Shizi&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://shiziblog.cn/</link>
     <description>Recent content on Shizi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 05 May 2022 00:18:23 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 May 2022 00:18:23 +0800</lastBuildDate><atom:link href="https://shiziblog.cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>http://localhost:1313/posts/blog/blog/</link>
+      <link>https://shiziblog.cn/posts/blog/blog/</link>
       <pubDate>Thu, 05 May 2022 00:18:23 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/blog/blog/</guid>
+      <guid>https://shiziblog.cn/posts/blog/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Life</title>
-      <link>http://localhost:1313/posts/life/life/</link>
+      <link>https://shiziblog.cn/posts/life/life/</link>
       <pubDate>Thu, 05 May 2022 00:18:15 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/life/life/</guid>
+      <guid>https://shiziblog.cn/posts/life/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Life</title>
-      <link>http://localhost:1313/posts/unclassified/life/</link>
+      <link>https://shiziblog.cn/posts/unclassified/life/</link>
       <pubDate>Thu, 05 May 2022 00:18:15 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/unclassified/life/</guid>
+      <guid>https://shiziblog.cn/posts/unclassified/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Read</title>
-      <link>http://localhost:1313/posts/read/read/</link>
+      <link>https://shiziblog.cn/posts/read/read/</link>
       <pubDate>Thu, 05 May 2022 00:18:06 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/read/read/</guid>
+      <guid>https://shiziblog.cn/posts/read/read/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tech</title>
-      <link>http://localhost:1313/posts/tech/tech/</link>
+      <link>https://shiziblog.cn/posts/tech/tech/</link>
       <pubDate>Thu, 05 May 2022 00:17:58 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/tech/tech/</guid>
+      <guid>https://shiziblog.cn/posts/tech/tech/</guid>
       <description>科技代码</description>
     </item>
     
     <item>
       <title>🤝友链</title>
-      <link>http://localhost:1313/links/</link>
+      <link>https://shiziblog.cn/links/</link>
       <pubDate>Sat, 06 Nov 2021 15:15:53 +0800</pubDate>
       
-      <guid>http://localhost:1313/links/</guid>
+      <guid>https://shiziblog.cn/links/</guid>
       <description>👉友链格式 名称： 柿子的自留地 网址： https://shiziblog.cn 图标： https://shiziblog.cn/img/shizi.png 描述： 柿柿柿 👉友链申请要求 欢迎联系，秉承互换友链原则、文章定期更新、不能有太多广告、个人描述字数控制在15字内</description>
     </item>
     
     <item>
       <title>欢迎来访</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://shiziblog.cn/about/</link>
       <pubDate>Sat, 06 Nov 2021 14:57:28 +0800</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://shiziblog.cn/about/</guid>
       <description>能在众多博客中与你相遇，是一种缘分。 关于我 英文名: Br1an Shuai 运动: 羽毛球 待完善&amp;hellip;</description>
     </item>
     
     <item>
       <title>Redis scan命令学习</title>
-      <link>http://localhost:1313/posts/tech/tech1/</link>
+      <link>https://shiziblog.cn/posts/tech/tech1/</link>
       <pubDate>Wed, 05 May 2021 00:17:58 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/tech/tech1/</guid>
+      <guid>https://shiziblog.cn/posts/tech/tech1/</guid>
       <description>scan命令详解</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/unclassified/test/</link>
+      <link>https://shiziblog.cn/posts/unclassified/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/unclassified/test/</guid>
+      <guid>https://shiziblog.cn/posts/unclassified/test/</guid>
       <description></description>
     </item>
     
