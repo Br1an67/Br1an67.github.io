@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>🧱 建站 on Shizi&#39;s Blog</title>
-    <link>https://shiziblog.cn/posts/blog/</link>
-    <description>Recent content in 🧱 建站 on Shizi&#39;s Blog</description>
+    <title>Hugo on Shizi&#39;s Blog</title>
+    <link>https://shiziblog.cn/tags/hugo/</link>
+    <description>Recent content in Hugo on Shizi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 07 Jul 2024 18:19:13 +0800</lastBuildDate><atom:link href="https://shiziblog.cn/posts/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jul 2024 18:19:13 +0800</lastBuildDate><atom:link href="https://shiziblog.cn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo博客搭建记录</title>
       <link>https://shiziblog.cn/posts/blog/hugo_build/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://shiziblog.cn/posts/blog/hugo_build/</guid>
       <description>0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户</description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://shiziblog.cn/posts/blog/blog/</link>
-      <pubDate>Thu, 05 May 2022 00:18:23 +0800</pubDate>
-      
-      <guid>https://shiziblog.cn/posts/blog/blog/</guid>
-      <description></description>
     </item>
     
   </channel>

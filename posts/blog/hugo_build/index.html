@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hugo博客搭建记录 | Shizi&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户">
+<meta name="author" content="Shizi">
+<link rel="canonical" href="https://shiziblog.cn/posts/blog/hugo_build/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://shiziblog.cn/img/shizi.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://shiziblog.cn/img/shizi.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://shiziblog.cn/img/shizi.png">
+<link rel="apple-touch-icon" href="https://shiziblog.cn/img/shizi.png">
+<link rel="mask-icon" href="https://shiziblog.cn/img/shizi.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://shiziblog.cn/posts/blog/hugo_build/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = ""; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/satouriko/LxgwWenKai_Webfonts@v1.101/dist/LXGWWenKai-Regular.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/satouriko/LxgwWenKai_Webfonts@v1.101/dist/LXGWWenKai-Light.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/satouriko/LxgwWenKai_Webfonts@v1.101/dist/LXGWWenKai-Bold.css" />
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+                
+  
+
+<meta property="og:title" content="Hugo博客搭建记录" />
+<meta property="og:description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shiziblog.cn/posts/blog/hugo_build/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-07-07T18:19:13+08:00" />
+<meta property="article:modified_time" content="2024-07-07T18:19:13+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo博客搭建记录"/>
+<meta name="twitter:description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+
+        {
+          "@type": "ListItem",
+          "position":  1 ,
+          "name": "📑博客",
+          "item": "https://shiziblog.cn/posts/"
+        },
+
+        {
+          "@type": "ListItem",
+          "position":  2 ,
+          "name": "🧱 建站",
+          "item": "https://shiziblog.cn/posts/blog/"
+        }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Hugo博客搭建记录",
+      "item": "https://shiziblog.cn/posts/blog/hugo_build/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo博客搭建记录",
+  "name": "Hugo博客搭建记录",
+  "description": "0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户",
+  "keywords": [
+    ""
+  ],
+  "articleBody": "0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo\n了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。\n推荐 Windows 用户使用 winget 进行安装，\nWinget is Microsoft’s official free and open-source package manager for Windows.\nTo install the extended edition of Hugo: winget install Hugo.Hugo.Extended\n下载完成后，输入: hugo version 以检查是否安装成功，若出现版本信息则表示安装成功。\n2.创建 GitHub Pages 仓库 2.1 命名GitHub Pages仓库，格式为,其中是自己的 GitHub 的用户名。\n2.2 ✔勾选Public,设置为公开仓库。\n2.3 ✔勾选添加README文件。\n3.使用Hugo新建站点 命令行输入hugo new site 后续命令行指令默认在根目录下运行\n创建完成后，根目录包含以下文件\n. ├── archetypes: default.md #生成博客文章的模版 ├── assets # 存放被 Hugo Pipes 处理的文件 ├── content # 存放markdown文件作为博客内容 ├── data # 存放 Hugo 处理的数据 ├── layouts # 存放布局文件 ├── static # 存放静态文件 图片 CSS JS文件 ├── themes: 存放不同的主题 └── hugo.toml: 博客配置文件支持 JSON YAML TOML 三种格式配置文件 4.选择Hugo主题 为了实现快速搭建节省时间，也推荐直接下载修改后的模板。\nblog-hugo-theme-LoveIt\nsulv-hugo-papermod\n另，从社区中选择主题\nComplete List | Hugo Themes\n推荐主题：\nStack | Hugo Themes\nPaper | Hugo Themes\nGitHub - adityatelange/hugo-PaperMod: A fast, clean, responsive Hugo theme.\n以主题Paper为例，GitHub对应仓库中README文件中有安装说明，将主题文件git clone到/themes文件夹中，并根据提示修改config.toml。\n5.新建博客文章 使用hugo new posts/.md命令以使用archetypes/default.md模板文件在/content/posts目录下新建.md。\n关于模板文件以及相关front matter配置，请参考官方文档Front matter | Hugo\n6.将博客部署到GitHub 在编辑完成后，使用hugo命令进行构建。\nHugo将构建后的网站内容保存在博客根目录下的public文件夹中，接下来使用Git工具将public文件夹的内容提交到仓库。\n也可以选择部署到云服务器上，具体参考Sulv的教程hugo博客部署到腾讯云轻量级服务器 | Sulv’s Blog\n笔者选择使用 Github Pages 发布静态博客\n优点：\n仅需一个 GitHub 账号和简单配置即可将静态博客发布到 GitHub Pages； 没有维护的时间成本, 可以将精力更多的放到博客内容本身上去； 无需备案； 无需 SSL 证书； 缺点：\n访问速度较慢 访问速度较慢 访问速度较慢 7.常用操作 常用命令：\n# 新建文章 hugo new posts/hello_world.md # 文件位置为content/posts/hello_world.md # 构建Hugo网站 hugo # 本地预览 http://localhost:1313/ -D后缀表示应用草稿 hugo server -D # 使用这个命令覆盖生成新的public文件夹 hugo -F --cleanDestinationDir 输入hugo的生成方式只会往public文件夹里添加内容，但是不会删除外部已经不存在而public里面还存在的文件。\n在博客中添加本地图片：\n将图片放到static文件夹下，以static为相对路径进行引用，如![](pic_name.png)。\n推荐使用文件夹对图片进行统一管理，图片放到static/imgs文件夹下，引用格式为![](/imgs/pic_name.png)。\nmarkdown调整图片位置和大小，嵌入HTML代码：\n\u003cdiv align=left\u003e \u003cimg src=https://img-blog.csdnimg.cn/20200822014538211.png width=60% /\u003e \u003c/div\u003e 8.细节优化 Features · adityatelange/hugo-PaperMod Wiki · GitHub\n8.1 自定义博客域名 替换.github.io\n选择在阿里云注册域名，使用cloudflare进行域名解析。\n在Github Pages对应仓库--Settings--Pages--Custom domain中绑定自己购买的域名。\n8.2 引入twikoo评论系统 Twikoo | 一个简洁、安全、免费的静态网站评论系统\nTwikoo Vercel 部署教程_哔哩哔哩_bilibili\n选择部署在Vercel平台，发现国内无法访问\n8.2.1 添加自定义表情包 Twikoo 添加自定义表情包 | 云晓晨CatchYun 给twikoo添加自定义表情包 | 前尘小筑\n8.2.2 表情包资源 表情速查\nGitHub - 2X-ercha/Twikoo-Magic: Twikoo自定义表情列表\ncdn/src/emojis at master · Irithys/cdn · GitHub\n8.2.3 利用 GitHub 标签与仓库镜像添加自定义表情 创建自己的表情预设 | Waline\njsDelivr - A free, fast, and reliable CDN for JS and open source\ncdn.jsdelivr.net 可能在国内受到污染，可以将 cdn.jsdelivr.net 换成 gcore.jsdelivr.net，或代理cdn.jsdelivr.net使用，\n8.3 关于博客的图标 iconfont-阿里巴巴矢量图标库\nEmoji表情1\nEmoji表情2\n8.4 修改字体 使用CDN，修改代码字体为JetBrains Mono，博客字体为霞鹭文楷。\n在 PaperMod 博客中设置自定义字体 | Aimer’s Blog\n修改全局字体：\n在 Google Fonts 中查询开源字体，以 JetBrains Mono 为例，Google Fonts 会生成 HTML 和 css ，将 HTML 插入到 layouts/partials/extend_head.html 中，将 CSS 插入到 assets/css/extended/blank.css：\nbody { font-family: \"LXGWWenKai\", sans-serif; } 修改代码字体，将 CSS 插入到 assets/css/extended/code.css：\n.post-content pre,code { font-family: 'JetBrains Mono', monospace; } 8.5 个人博客增加打赏功能 Hugo - 个人博客添加打赏功能\n9.遇到的问题 9.1 解决国内无法访问Vercel 国内访问不了Vercel上绑定的域名?\nvercel部署添加域名国内加速\n9.2 修改js/css文件后本地预览没有更新 浏览器强制刷新，Mac：Command + Shift + R，Windows：Ctrl + Shift + R。\n关闭hugo server，再重新开启，再刷新网站。\nReference [1] hugo博客搭建 | PaperMod主题 | Sulv’s Blog\n[2] 如何用 GitHub Pages + Hugo 搭建个人博客 · 小绵尾巴\n[3] Github Pages + Hugo 搭建个人博客 - 渣渣的夏天\n[4] Hugo + PaperMod搭建技术博客 | Kunyang’s Blog\n[5] Hugo+PaperMod 双语博客搭建 Home-Info+Profile Mode - YUNYI BLOG\n",
+  "wordCount" : "2373",
+  "inLanguage": "zh",
+  "datePublished": "2024-07-07T18:19:13+08:00",
+  "dateModified": "2024-07-07T18:19:13+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Shizi"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://shiziblog.cn/posts/blog/hugo_build/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shizi's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://shiziblog.cn/img/shizi.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://shiziblog.cn/" accesskey="h" title="柿子的自留地 (Alt + H)">
+            <img src="https://shiziblog.cn/img/shizi.png" alt="logo" aria-label="logo"
+                 height="35">柿子的自留地</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://shiziblog.cn/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
+                <span>🔍 搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://shiziblog.cn/" title="🏠 主页">
+                <span>🏠 主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://shiziblog.cn/posts" title="📚 文章">
+                <span>📚 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://shiziblog.cn/tags" title="🧩 标签">
+                <span>🧩 标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://shiziblog.cn/archives/" title="⏱️ 时间轴">
+                <span>⏱️ 时间轴</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://shiziblog.cn/about" title="🙋🏻‍♂️ 关于">
+                <span>🙋🏻‍♂️ 关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://shiziblog.cn/links" title="🤝 友链">
+                <span>🤝 友链</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main page">
+<style>
+    i[id*="post_meta_style"] {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+</style>
+
+<article class="post-single">
+    <div id="single-content">
+        <header class="post-header">
+            <div class="breadcrumbs"><a href="https://shiziblog.cn/">🏠 主页</a>&nbsp;»&nbsp;<a href="https://shiziblog.cn/posts/">📑博客</a>&nbsp;»&nbsp;<a href="https://shiziblog.cn/posts/blog/">🧱 建站</a></div>
+            <h1 class="post-title">
+                Hugo博客搭建记录
+            </h1>
+            <div class="post-meta">
+
+<style>
+    i[id*="post_meta_style"] {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    .parent-post-meta {
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0.8;
+    }
+</style>
+
+<span class="parent-post-meta">
+    <span id="post_meta_style_1">
+        <span class="fa fa-calendar-check-o"></span>
+        <span>2024-07-07
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    
+    
+    
+    
+    
+    
+    
+    <span id="post_meta_style_3">
+        <span class="fa fa-file-word-o"></span>
+        <span>2373字
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_4">
+        <span class="fa fa-clock-o"></span>
+        <span>
+            阅读时间约5分钟
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_5">
+        <span class="fa fa-user-o"></span>
+        <span>Shizi
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    <span id="post_meta_style_6">
+        <span class="fa fa-tags" style="opacity: 0.8"></span>
+        <span>
+            <span class="post-tags-meta">
+                <a href="https://shiziblog.cn/tags/hugo/" style="color: var(--secondary)!important;">Hugo</a>
+                &nbsp;<a href="https://shiziblog.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="color: var(--secondary)!important;">博客搭建</a>
+            </span>
+        </span>
+    </span>
+</span>
+<span style="opacity: 0.8;">
+                    <span id="post_meta_style_7">
+                        &nbsp;&nbsp;
+                        <span class="fa fa-eye" ></span>
+                        <span>
+                            <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </span>
+                    <span id="post_meta_style_8">
+                        <span class="fa fa-commenting-o"></span>
+                        <span>
+                            <script src="https://cdn.staticfile.org/twikoo/1.6.36/twikoo.all.min.js"></script>
+                            <script>
+                                let url = document.documentURI
+                                
+                                let dnsUrl = "https://shiziblog.cn/"
+                                let urlSplit = url.split(dnsUrl)
+                                let finalUrl = urlSplit[1]
+                                if (finalUrl[0] !== '/') {
+                                    finalUrl = '/'+finalUrl
+                                }
+                                twikoo.getCommentsCount({
+                                    envId: "https://800067.xyz/", 
+                                region:  null , 
+                                urls: [ 
+                                    
+                                    finalUrl,
+                                ],
+                                    includeReply: false 
+                                }).then(function (res) {
+                                    let count = res[0].count
+                                    const obj = document.getElementById("comment_count");
+                                    obj.innerText = count
+                                    
+                                    
+                                    
+                                }).catch(function (err) {
+                                    
+                                    console.error(err);
+                                });
+                            </script>
+                            <span id="comment_count"></span>
+                        </span>
+                    </span>
+                </span>
+
+</div>
+        </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#0%e8%bf%90%e8%a1%8c%e7%8e%af%e5%a2%83" aria-label="0.运行环境">0.运行环境</a></li>
+                <li>
+                    <a href="#1%e5%ae%89%e8%a3%85hugo" aria-label="1.安装Hugo">1.安装Hugo</a></li>
+                <li>
+                    <a href="#2%e5%88%9b%e5%bb%ba-github-pages-%e4%bb%93%e5%ba%93" aria-label="2.创建 GitHub Pages 仓库">2.创建 GitHub Pages 仓库</a></li>
+                <li>
+                    <a href="#3%e4%bd%bf%e7%94%a8hugo%e6%96%b0%e5%bb%ba%e7%ab%99%e7%82%b9" aria-label="3.使用Hugo新建站点">3.使用Hugo新建站点</a></li>
+                <li>
+                    <a href="#4%e9%80%89%e6%8b%a9hugo%e4%b8%bb%e9%a2%98" aria-label="4.选择Hugo主题">4.选择Hugo主题</a></li>
+                <li>
+                    <a href="#5%e6%96%b0%e5%bb%ba%e5%8d%9a%e5%ae%a2%e6%96%87%e7%ab%a0" aria-label="5.新建博客文章">5.新建博客文章</a></li>
+                <li>
+                    <a href="#6%e5%b0%86%e5%8d%9a%e5%ae%a2%e9%83%a8%e7%bd%b2%e5%88%b0github" aria-label="6.将博客部署到GitHub">6.将博客部署到GitHub</a></li>
+                <li>
+                    <a href="#7%e5%b8%b8%e7%94%a8%e6%93%8d%e4%bd%9c" aria-label="7.常用操作">7.常用操作</a></li>
+                <li>
+                    <a href="#8%e7%bb%86%e8%8a%82%e4%bc%98%e5%8c%96" aria-label="8.细节优化">8.细节优化</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#81-%e8%87%aa%e5%ae%9a%e4%b9%89%e5%8d%9a%e5%ae%a2%e5%9f%9f%e5%90%8d" aria-label="8.1 自定义博客域名">8.1 自定义博客域名</a></li>
+                <li>
+                    <a href="#82-%e5%bc%95%e5%85%a5twikoo%e8%af%84%e8%ae%ba%e7%b3%bb%e7%bb%9f" aria-label="8.2 引入twikoo评论系统">8.2 引入twikoo评论系统</a><ul>
+                        
+                <li>
+                    <a href="#821-%e6%b7%bb%e5%8a%a0%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e6%83%85%e5%8c%85" aria-label="8.2.1 添加自定义表情包">8.2.1 添加自定义表情包</a></li>
+                <li>
+                    <a href="#822-%e8%a1%a8%e6%83%85%e5%8c%85%e8%b5%84%e6%ba%90" aria-label="8.2.2 表情包资源">8.2.2 表情包资源</a></li>
+                <li>
+                    <a href="#823-%e5%88%a9%e7%94%a8-github-%e6%a0%87%e7%ad%be%e4%b8%8e%e4%bb%93%e5%ba%93%e9%95%9c%e5%83%8f%e6%b7%bb%e5%8a%a0%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e6%83%85" aria-label="8.2.3 利用 GitHub 标签与仓库镜像添加自定义表情">8.2.3 利用 GitHub 标签与仓库镜像添加自定义表情</a></li></ul>
+                </li>
+                <li>
+                    <a href="#83-%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%9a%84%e5%9b%be%e6%a0%87" aria-label="8.3 关于博客的图标">8.3 关于博客的图标</a></li>
+                <li>
+                    <a href="#84-%e4%bf%ae%e6%94%b9%e5%ad%97%e4%bd%93" aria-label="8.4 修改字体">8.4 修改字体</a></li>
+                <li>
+                    <a href="#85-%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%a2%9e%e5%8a%a0%e6%89%93%e8%b5%8f%e5%8a%9f%e8%83%bd" aria-label="8.5 个人博客增加打赏功能">8.5 个人博客增加打赏功能</a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#9%e9%81%87%e5%88%b0%e7%9a%84%e9%97%ae%e9%a2%98" aria-label="9.遇到的问题">9.遇到的问题</a><ul>
+                        <ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#91-%e8%a7%a3%e5%86%b3%e5%9b%bd%e5%86%85%e6%97%a0%e6%b3%95%e8%ae%bf%e9%97%aevercel" aria-label="9.1 解决国内无法访问Vercel">9.1 解决国内无法访问<code>Vercel</code></a></li>
+                <li>
+                    <a href="#92-%e4%bf%ae%e6%94%b9jscss%e6%96%87%e4%bb%b6%e5%90%8e%e6%9c%ac%e5%9c%b0%e9%a2%84%e8%a7%88%e6%b2%a1%e6%9c%89%e6%9b%b4%e6%96%b0" aria-label="9.2 修改js/css文件后本地预览没有更新">9.2 修改<code>js/css</code>文件后本地预览没有更新</a></li></ul>
+                    </ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#reference" aria-label="Reference">Reference</a>
+                </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        if (elements) {
+            activeElement = Array.from(elements).find((element) => {
+                if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                    (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                    return element;
+                }
+            }) || activeElement
+
+            elements.forEach(element => {
+                const id = encodeURI(element.getAttribute('id')).toLowerCase();
+                if (element === activeElement){
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+                } else {
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+                }
+            })
+        }
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
+        <div class="post-content"><h3 id="0运行环境">0.运行环境<a hidden class="anchor" aria-hidden="true" href="#0运行环境">#</a></h3>
+<ul>
+<li>了解基本的终端命令行使用</li>
+<li>安装 Git ，并且了解基本的 Git 知识，推荐学习工具：<a href="https://learngitbranching.js.org/">Learn Git Branching</a>, <a href="https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources">Git and GitHub learning resources - GitHub Docs</a></li>
+<li>拥有 <a href="https://github.com/">GitHub</a> 账号</li>
+</ul>
+<h3 id="1安装hugo">1.安装Hugo<a hidden class="anchor" aria-hidden="true" href="#1安装hugo">#</a></h3>
+<p><a href="https://gohugo.io/installation/">Installation | Hugo</a></p>
+<ul>
+<li>了解基本的终端命令行使用</li>
+<li>安装 Git ，并且了解基本的 Git 知识，推荐学习工具：<a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
+<li>拥有 <a href="https://github.com/">GitHub</a> 账号</li>
+</ul>
+<blockquote>
+<p>注意这里要安装extended版本。</p>
+</blockquote>
+<p>推荐 Windows 用户使用 winget 进行安装，</p>
+<p><a href="https://learn.microsoft.com/en-us/windows/package-manager/">Winget</a> is Microsoft’s official free and open-source package manager for Windows.</p>
+<p>To install the extended edition of Hugo: <code>winget install Hugo.Hugo.Extended</code></p>
+<p>下载完成后，输入: <code>hugo version</code> 以检查是否安装成功，若出现版本信息则表示安装成功。</p>
+<h3 id="2创建-github-pages-仓库">2.创建 GitHub Pages 仓库<a hidden class="anchor" aria-hidden="true" href="#2创建-github-pages-仓库">#</a></h3>
+<p>2.1 命名<strong>GitHub Pages</strong>仓库，格式为<code>&lt;username.github.io&gt;</code>,其中<code>&lt;username&gt;</code>是自己的 GitHub 的用户名。</p>
+<p>2.2 ✔勾选<strong>Public</strong>,设置为公开仓库。</p>
+<p>2.3 ✔勾选添加<strong>README</strong>文件。</p>
+<h3 id="3使用hugo新建站点">3.使用Hugo新建站点<a hidden class="anchor" aria-hidden="true" href="#3使用hugo新建站点">#</a></h3>
+<p>命令行输入<code>hugo new site &lt;sitename&gt;</code></p>
+<p>后续命令行指令默认在<code>&lt;sitename&gt;</code>根目录下运行</p>
+<p>创建完成后，根目录包含以下文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── archetypes: default.md <span style="color:#75715e">#生成博客文章的模版</span>
+</span></span><span style="display:flex;"><span>├── assets <span style="color:#75715e"># 存放被 Hugo Pipes 处理的文件</span>
+</span></span><span style="display:flex;"><span>├── content <span style="color:#75715e"># 存放markdown文件作为博客内容</span>
+</span></span><span style="display:flex;"><span>├── data <span style="color:#75715e"># 存放 Hugo 处理的数据</span>
+</span></span><span style="display:flex;"><span>├── layouts <span style="color:#75715e"># 存放布局文件</span>
+</span></span><span style="display:flex;"><span>├── static <span style="color:#75715e"># 存放静态文件 图片 CSS JS文件</span>
+</span></span><span style="display:flex;"><span>├── themes: 存放不同的主题
+</span></span><span style="display:flex;"><span>└── hugo.toml: 博客配置文件支持 JSON YAML TOML 三种格式配置文件
+</span></span></code></pre></div><h3 id="4选择hugo主题">4.选择Hugo主题<a hidden class="anchor" aria-hidden="true" href="#4选择hugo主题">#</a></h3>
+<blockquote>
+<p>为了实现快速搭建节省时间，也推荐直接下载修改后的模板。</p>
+</blockquote>
+<p><a href="https://github.com/zz2summer/blog-hugo-theme-LoveIt">blog-hugo-theme-LoveIt</a></p>
+<p><a href="https://github.com/xyming108/sulv-hugo-papermod/tree/main">sulv-hugo-papermod</a></p>
+<p>另，从社区中选择主题</p>
+<p><a href="https://themes.gohugo.io/">Complete List | Hugo Themes</a></p>
+<p>推荐主题：</p>
+<p><a href="https://themes.gohugo.io/themes/hugo-theme-stack/">Stack | Hugo Themes</a></p>
+<p><a href="https://themes.gohugo.io/themes/hugo-paper/">Paper | Hugo Themes</a></p>
+<p><a href="https://github.com/adityatelange/hugo-PaperMod">GitHub - adityatelange/hugo-PaperMod: A fast, clean, responsive Hugo theme.</a></p>
+<p>以主题<code>Paper</code>为例，GitHub对应仓库中README文件中有安装说明，将主题文件<code>git clone</code>到<code>&lt;sitename&gt;/themes</code>文件夹中，并根据提示修改config.toml。</p>
+<h3 id="5新建博客文章">5.新建博客文章<a hidden class="anchor" aria-hidden="true" href="#5新建博客文章">#</a></h3>
+<p>使用<code>hugo new posts/&lt;postname&gt;.md</code>命令以使用<code>archetypes/default.md</code>模板文件在<code>&lt;sitename&gt;/content/posts</code>目录下新建<code>&lt;postname&gt;.md</code>。</p>
+<p>关于模板文件以及相关<code>front matter</code>配置，请参考官方文档<a href="https://gohugo.io/content-management/front-matter/">Front matter | Hugo</a></p>
+<h3 id="6将博客部署到github">6.将博客部署到GitHub<a hidden class="anchor" aria-hidden="true" href="#6将博客部署到github">#</a></h3>
+<p>在编辑完成后，使用<code>hugo</code>命令进行构建。</p>
+<p><code>Hugo</code>将构建后的网站内容保存在博客根目录下的public文件夹中，接下来使用Git工具将public文件夹的内容提交到<code>&lt;username.github.io&gt;</code>仓库。</p>
+<blockquote>
+<p>也可以选择部署到云服务器上，具体参考Sulv的教程<a href="https://www.sulvblog.cn/posts/blog/hugo_deploy/">hugo博客部署到腾讯云轻量级服务器 | Sulv&rsquo;s Blog</a></p>
+</blockquote>
+<p>笔者选择使用 <a href="https://pages.github.com/">Github Pages</a> 发布静态博客</p>
+<p>优点：</p>
+<ul>
+<li>仅需一个 GitHub 账号和简单配置即可将静态博客发布到 GitHub Pages；</li>
+<li>没有维护的时间成本, 可以将精力更多的放到博客内容本身上去；</li>
+<li>无需备案；</li>
+<li>无需 SSL 证书；</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>访问速度较慢</li>
+<li>访问速度较慢</li>
+<li>访问速度较慢</li>
+</ul>
+<h3 id="7常用操作">7.常用操作<a hidden class="anchor" aria-hidden="true" href="#7常用操作">#</a></h3>
+<p>常用命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 新建文章</span>
+</span></span><span style="display:flex;"><span>hugo new posts/hello_world.md 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 文件位置为content/posts/hello_world.md</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 构建Hugo网站 </span>
+</span></span><span style="display:flex;"><span>hugo
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 本地预览 http://localhost:1313/ -D后缀表示应用草稿</span>
+</span></span><span style="display:flex;"><span>hugo server -D
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用这个命令覆盖生成新的public文件夹</span>
+</span></span><span style="display:flex;"><span>hugo -F --cleanDestinationDir
+</span></span></code></pre></div><blockquote>
+<p>输入hugo的生成方式只会往public文件夹里添加内容，但是不会删除外部已经不存在而public里面还存在的文件。</p>
+</blockquote>
+<p>在博客中添加本地图片：</p>
+<p>将图片放到<code>static</code>文件夹下，以<code>static</code>为相对路径进行引用，如<code>![](pic_name.png)</code>。</p>
+<p>推荐使用文件夹对图片进行统一管理，图片放到<code>static/imgs</code>文件夹下，引用格式为<code>![](/imgs/pic_name.png)</code>。</p>
+<p>markdown调整图片位置和大小，嵌入<code>HTML</code>代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- 固定宽高 width=200 height=100 --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">left</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">https://img-blog.csdnimg.cn/20200822014538211.png</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">60%</span> /&gt; 
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><h3 id="8细节优化">8.细节优化<a hidden class="anchor" aria-hidden="true" href="#8细节优化">#</a></h3>
+<p><a href="https://github.com/adityatelange/hugo-PaperMod/wiki/Features#home-info-mode">Features · adityatelange/hugo-PaperMod Wiki · GitHub</a></p>
+<h5 id="81-自定义博客域名">8.1 自定义博客域名<a hidden class="anchor" aria-hidden="true" href="#81-自定义博客域名">#</a></h5>
+<p>替换<code>&lt;username&gt;.github.io</code></p>
+<p>选择在<a href="https://wanwang.aliyun.com/domain">阿里云</a>注册域名，使用<code>cloudflare</code>进行域名解析。</p>
+<p>在<code>Github Pages</code>对应仓库<code>--Settings--Pages--Custom domain</code>中绑定自己购买的域名。</p>
+<h5 id="82-引入twikoo评论系统">8.2 引入twikoo评论系统<a hidden class="anchor" aria-hidden="true" href="#82-引入twikoo评论系统">#</a></h5>
+<p><a href="https://twikoo.js.org/">Twikoo | 一个简洁、安全、免费的静态网站评论系统</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Fh411e7ZH">Twikoo Vercel 部署教程_哔哩哔哩_bilibili</a></p>
+<p>选择部署在<code>Vercel</code>平台，发现国内无法访问</p>
+<h6 id="821-添加自定义表情包">8.2.1 添加自定义表情包<a hidden class="anchor" aria-hidden="true" href="#821-添加自定义表情包">#</a></h6>
+<p><a href="https://www.catchyun.com/archives/38.html">Twikoo 添加自定义表情包 | 云晓晨CatchYun</a>
+<a href="https://mnchen.cn/posts/56129.html">给twikoo添加自定义表情包 | 前尘小筑</a></p>
+<h6 id="822-表情包资源">8.2.2 表情包资源<a hidden class="anchor" aria-hidden="true" href="#822-表情包资源">#</a></h6>
+<p><a href="https://emotion.xiaokang.me/#/">表情速查</a></p>
+<p><a href="https://github.com/2X-ercha/Twikoo-Magic">GitHub - 2X-ercha/Twikoo-Magic: Twikoo自定义表情列表</a></p>
+<p><a href="https://github.com/Irithys/cdn/tree/master/src/emojis">cdn/src/emojis at master · Irithys/cdn · GitHub</a></p>
+<h6 id="823-利用-github-标签与仓库镜像添加自定义表情">8.2.3 利用 GitHub 标签与仓库镜像添加自定义表情<a hidden class="anchor" aria-hidden="true" href="#823-利用-github-标签与仓库镜像添加自定义表情">#</a></h6>
+<p><a href="https://waline.js.org/cookbook/customize/emoji.html#%E5%88%A9%E7%94%A8-github-%E6%A0%87%E7%AD%BE%E4%B8%8E%E4%BB%93%E5%BA%93%E9%95%9C%E5%83%8F">创建自己的表情预设 | Waline</a></p>
+<p><a href="https://www.jsdelivr.com/">jsDelivr - A free, fast, and reliable CDN for JS and open source</a></p>
+<blockquote>
+<p>cdn.jsdelivr.net 可能在国内受到污染，可以将 <code>cdn.jsdelivr.net</code> 换成 <code>gcore.jsdelivr.net</code>，或代理<code>cdn.jsdelivr.net</code>使用，</p>
+</blockquote>
+<h5 id="83-关于博客的图标">8.3 关于博客的图标<a hidden class="anchor" aria-hidden="true" href="#83-关于博客的图标">#</a></h5>
+<p><a href="https://www.iconfont.cn/">iconfont-阿里巴巴矢量图标库</a></p>
+<p><a href="https://emoji.dashgame.com/">Emoji表情1</a></p>
+<p><a href="https://emoji6.com/emojiall/">Emoji表情2</a></p>
+<h5 id="84-修改字体">8.4 修改字体<a hidden class="anchor" aria-hidden="true" href="#84-修改字体">#</a></h5>
+<p>使用CDN，修改代码字体为<code>JetBrains Mono</code>，博客字体为霞鹭文楷。</p>
+<p><a href="https://aimer.aiursoft.cn/zh/post/web/set-custom-fonts-in-papermod-site/">在 PaperMod 博客中设置自定义字体 | Aimer&rsquo;s Blog</a></p>
+<p>修改全局字体：</p>
+<p>在 <a href="https://fonts.google.com/">Google Fonts</a> 中查询开源字体，以 <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a> 为例，Google Fonts 会生成 HTML 和 css ，将 HTML 插入到 <code>layouts/partials/extend_head.html</code> 中，将 CSS 插入到 <code>assets/css/extended/blank.css</code>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;LXGWWenKai&#34;</span>, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>修改代码字体，将 CSS 插入到 <code>assets/css/extended/code.css</code>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">post-content</span> <span style="color:#f92672">pre</span><span style="color:#f92672">,</span><span style="color:#f92672">code</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#39;JetBrains Mono&#39;</span>, <span style="color:#66d9ef">monospace</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h5 id="85-个人博客增加打赏功能">8.5 个人博客增加打赏功能<a hidden class="anchor" aria-hidden="true" href="#85-个人博客增加打赏功能">#</a></h5>
+<p><a href="https://hyrtee.github.io/2023/reward-support/">Hugo - 个人博客添加打赏功能</a></p>
+<h3 id="9遇到的问题">9.遇到的问题<a hidden class="anchor" aria-hidden="true" href="#9遇到的问题">#</a></h3>
+<h6 id="91-解决国内无法访问vercel">9.1 解决国内无法访问<code>Vercel</code><a hidden class="anchor" aria-hidden="true" href="#91-解决国内无法访问vercel">#</a></h6>
+<p><a href="https://www.laogou666.com/posts/AGI/Vercel">国内访问不了Vercel上绑定的域名?</a></p>
+<p><a href="https://mirror.xyz/gamfi.eth/X9ZSDrXIhfdk6fh8UTujNO8rpfdM49eS6dJ6_CW64dg">vercel部署添加域名国内加速</a></p>
+<h6 id="92-修改jscss文件后本地预览没有更新">9.2 修改<code>js/css</code>文件后本地预览没有更新<a hidden class="anchor" aria-hidden="true" href="#92-修改jscss文件后本地预览没有更新">#</a></h6>
+<ul>
+<li>
+<p>浏览器强制刷新，Mac：<code>Command + Shift + R</code>，Windows：<code>Ctrl + Shift + R</code>。</p>
+</li>
+<li>
+<p>关闭<code>hugo server</code>，再重新开启，再刷新网站。</p>
+</li>
+</ul>
+<h3 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h3>
+<p>[1] <a href="https://www.sulvblog.cn/posts/blog/build_hugo/">hugo博客搭建 | PaperMod主题 | Sulv&rsquo;s Blog</a></p>
+<p>[2] <a href="https://cuttontail.blog/blog/create-a-wesite-using-github-pages-and-hugo/">如何用 GitHub Pages + Hugo 搭建个人博客 · 小绵尾巴</a></p>
+<p>[3] <a href="https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Github Pages + Hugo 搭建个人博客 - 渣渣的夏天</a></p>
+<p>[4] <a href="https://kyxie.github.io/zh/blog/tech/papermod/#%e5%ae%89%e8%a3%85%e8%bf%87%e7%a8%8b">Hugo + PaperMod搭建技术博客 | Kunyang&rsquo;s Blog</a></p>
+<p>[5] <a href="https://www.yunyitang.me/hugo-papermod-blog/">Hugo+PaperMod 双语博客搭建 Home-Info+Profile Mode - YUNYI BLOG</a></p>
+
+
+        </div>
+        
+        <div style="padding: 10px 0; margin: 20px auto; width: 100%; font-size:16px; text-align: center;">
+            <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+                <span>打赏</span></button>
+            <div id="QR" style="display: none;">
+                <div id="wechat" style="display: inline-block">
+                    <a class="fancybox" rel="group">
+                        <img id="wechat_qr" style="width:180px;
+        max-width:100%;
+        display:inline-block;
+        margin:.8em 2em 0 2em" src="https://shiziblog.cn/img/wechat_pay.png" alt="WeChat Pay"></a>
+                    <p>微信打赏</p>
+                </div>
+                <div id="alipay" style="display: inline-block">
+                    <a class="fancybox" rel="group">
+                        <img id="alipay_qr" style="width:180px;
+        max-width:100%;
+        display:inline-block;
+        margin:.8em 2em 0 2em" src="https://shiziblog.cn/img/alipay.png" alt="Alipay"></a>
+                    <p>支付宝打赏</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="post-footer">
+            
+<nav class="paginav">
+  <a class="next" href="https://shiziblog.cn/posts/blog/blog/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>Blog</span>
+  </a>
+</nav>
+
+        </footer>
+    </div>
+
+<style>
+    .comments_details summary::marker {
+        font-size: 16px;
+        content: '▷ 展开评论';
+        color: var(--content);
+    }
+    .comments_details[open] summary::marker{
+        font-size: 16px;
+        content: '◁ 关闭评论';
+        color: var(--content);
+    }
+</style>
+
+
+<div>
+    <details class="comments_details">
+        <summary style="cursor: pointer; margin: 50px 0 20px 0;width: 130px;">
+            <span style="font-size: 20px;color: var(--content);">...</span>
+        </summary>
+        <div id="tcomment"></div>
+    </details>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.36/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "https://800067.xyz/",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region:  null ,
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+</div>
+</article>
+</main>
+
+<footer class="footer">
+    <span>
+        Copyright
+        &copy;
+        2024-2024
+        <a href="https://shiziblog.cn/" style="color:#939393;">Shizi&#39;s Blog</a>
+        All Rights Reserved
+    
+    
+    <span id="busuanzi_container">
+        <span class="fa fa-user"></span> <span id="busuanzi_value_site_uv"></span>
+        <span class="fa fa-eye"></span> <span id="busuanzi_value_site_pv"></span>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <span class="topInner">
+        <svg class="topSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"/>
+        </svg>
+        <span id="read_progress"></span>
+    </span>
+</a>
+
+<script>
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+<script>
+    let mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        (function() {
+            document.cookie = "change-themes" + "="+ escape ("false");
+        })()
+
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    });
+</script>
+
+<script>
+    document.body.addEventListener('copy', function (e) {
+        if (window.getSelection().toString() && window.getSelection().toString().length > 50) {
+            let clipboardData = e.clipboardData || window.clipboardData;
+            if (clipboardData) {
+                e.preventDefault();
+                let htmlData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Shizi's Blog"+'」的原创文章，遵循CC BY-NC-SA 4.0版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                let textData = window.getSelection().toString() +
+                    '\r\n\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Shizi's Blog"+'」的原创文章，遵循CC BY-NC-SA 4.0版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                clipboardData.setData('text/html', htmlData);
+                clipboardData.setData('text/plain', textData);
+            }
+        }
+    });
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                let text = codeblock.textContent +
+                    '\r\n————————————————\r\n' +
+                    '版权声明：本文为「'+"Shizi's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                '\r\n原文链接：' + location.href;
+                navigator.clipboard.writeText(text);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) {}
+            selection.removeRange(range);
+        });
+
+        let language = codeblock.className.replaceAll("language-", "")
+        let macTool = document.createElement("div")
+        let macTool1 = document.createElement("div")
+        let macTool2 = document.createElement("div")
+        let macTool3 = document.createElement("div")
+        let languageType = document.createElement("div")
+        languageType.innerText = language
+        macTool.setAttribute('class', 'mac-tool')
+        macTool1.setAttribute('class', 'mac bb1')
+        macTool2.setAttribute('class', 'mac bb2')
+        macTool3.setAttribute('class', 'mac bb3')
+        languageType.setAttribute('class', 'language-type')
+        macTool.appendChild(macTool1)
+        macTool.appendChild(macTool2)
+        macTool.appendChild(macTool3)
+        macTool.appendChild(languageType)
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+            container.appendChild(macTool)
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+            container.appendChild(macTool)
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+            container.appendChild(macTool)
+        }
+    });
+</script>
+</body>
+
+</html>
