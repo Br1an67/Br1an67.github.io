@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>博客搭建 on Shizi&#39;s Blog</title>
-    <link>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <link>https://shiziblog.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
     <description>Recent content in 博客搭建 on Shizi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 07 Jul 2024 18:19:13 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jul 2024 18:19:13 +0800</lastBuildDate><atom:link href="https://shiziblog.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo博客搭建记录</title>
-      <link>http://localhost:1313/posts/blog/hugo_build/</link>
+      <link>https://shiziblog.cn/posts/blog/hugo_build/</link>
       <pubDate>Sun, 07 Jul 2024 18:19:13 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/blog/hugo_build/</guid>
+      <guid>https://shiziblog.cn/posts/blog/hugo_build/</guid>
       <description>0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 注意这里要安装extended版本。 推荐 Windows 用户使用 winget 进行安装， Winget is Microsoft’s official free and open-source package manager for Windows. To install the extended edition of Hugo: winget install Hugo.Hugo.Extended 下载完成后，输</description>
     </item>
     
