@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Hugo博客搭建记录 | Shizi&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户">
+<meta name="description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 注意这里要安装extended版本。 推荐 Windows 用户使用 winget 进行安装， Winget is Microsoft’s official free and open-source package manager for Windows. To install the extended edition of Hugo: winget install Hugo.Hugo.Extended 下载完成后，输">
 <meta name="author" content="Shizi">
-<link rel="canonical" href="https://shiziblog.cn/posts/blog/hugo_build/">
+<link rel="canonical" href="http://localhost:1313/posts/blog/hugo_build/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://shiziblog.cn/img/shizi.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://shiziblog.cn/img/shizi.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://shiziblog.cn/img/shizi.png">
-<link rel="apple-touch-icon" href="https://shiziblog.cn/img/shizi.png">
-<link rel="mask-icon" href="https://shiziblog.cn/img/shizi.png">
+<link rel="icon" href="http://localhost:1313/img/shizi.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/img/shizi.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/img/shizi.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/shizi.png">
+<link rel="mask-icon" href="http://localhost:1313/img/shizi.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://shiziblog.cn/posts/blog/hugo_build/">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/blog/hugo_build/">
 <noscript>
     <style>
         #theme-toggle,
@@ -45,6 +45,8 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css" />
+
 
 
 
@@ -59,15 +61,15 @@ var _hmt = _hmt || [];
   
 
 <meta property="og:title" content="Hugo博客搭建记录" />
-<meta property="og:description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户" />
+<meta property="og:description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 注意这里要安装extended版本。 推荐 Windows 用户使用 winget 进行安装， Winget is Microsoft’s official free and open-source package manager for Windows. To install the extended edition of Hugo: winget install Hugo.Hugo.Extended 下载完成后，输" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shiziblog.cn/posts/blog/hugo_build/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/blog/hugo_build/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-07-07T18:19:13+08:00" />
 <meta property="article:modified_time" content="2024-07-07T18:19:13+08:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo博客搭建记录"/>
-<meta name="twitter:description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户"/>
+<meta name="twitter:description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 注意这里要安装extended版本。 推荐 Windows 用户使用 winget 进行安装， Winget is Microsoft’s official free and open-source package manager for Windows. To install the extended edition of Hugo: winget install Hugo.Hugo.Extended 下载完成后，输"/>
 
 
 <script type="application/ld+json">
@@ -80,20 +82,20 @@ var _hmt = _hmt || [];
           "@type": "ListItem",
           "position":  1 ,
           "name": "📑博客",
-          "item": "https://shiziblog.cn/posts/"
+          "item": "http://localhost:1313/posts/"
         },
 
         {
           "@type": "ListItem",
           "position":  2 ,
           "name": "🧱 建站",
-          "item": "https://shiziblog.cn/posts/blog/"
+          "item": "http://localhost:1313/posts/blog/"
         }, 
     {
       "@type": "ListItem",
       "position":  3 ,
       "name": "Hugo博客搭建记录",
-      "item": "https://shiziblog.cn/posts/blog/hugo_build/"
+      "item": "http://localhost:1313/posts/blog/hugo_build/"
     }
   ]
 }
@@ -104,12 +106,12 @@ var _hmt = _hmt || [];
   "@type": "BlogPosting",
   "headline": "Hugo博客搭建记录",
   "name": "Hugo博客搭建记录",
-  "description": "0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。 推荐 Windows 用户",
+  "description": "0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 注意这里要安装extended版本。 推荐 Windows 用户使用 winget 进行安装， Winget is Microsoft’s official free and open-source package manager for Windows. To install the extended edition of Hugo: winget install Hugo.Hugo.Extended 下载完成后，输",
   "keywords": [
     ""
   ],
-  "articleBody": "0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo\n了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching 拥有 GitHub 账号 注意这里要安装extended版本。\n推荐 Windows 用户使用 winget 进行安装，\nWinget is Microsoft’s official free and open-source package manager for Windows.\nTo install the extended edition of Hugo: winget install Hugo.Hugo.Extended\n下载完成后，输入: hugo version 以检查是否安装成功，若出现版本信息则表示安装成功。\n2.创建 GitHub Pages 仓库 2.1 命名GitHub Pages仓库，格式为,其中是自己的 GitHub 的用户名。\n2.2 ✔勾选Public,设置为公开仓库。\n2.3 ✔勾选添加README文件。\n3.使用Hugo新建站点 命令行输入hugo new site 后续命令行指令默认在根目录下运行\n创建完成后，根目录包含以下文件\n. ├── archetypes: default.md #生成博客文章的模版 ├── assets # 存放被 Hugo Pipes 处理的文件 ├── content # 存放markdown文件作为博客内容 ├── data # 存放 Hugo 处理的数据 ├── layouts # 存放布局文件 ├── static # 存放静态文件 图片 CSS JS文件 ├── themes: 存放不同的主题 └── hugo.toml: 博客配置文件支持 JSON YAML TOML 三种格式配置文件 4.选择Hugo主题 为了实现快速搭建节省时间，也推荐直接下载修改后的模板。\nblog-hugo-theme-LoveIt\nsulv-hugo-papermod\n另，从社区中选择主题\nComplete List | Hugo Themes\n推荐主题：\nStack | Hugo Themes\nPaper | Hugo Themes\nGitHub - adityatelange/hugo-PaperMod: A fast, clean, responsive Hugo theme.\n以主题Paper为例，GitHub对应仓库中README文件中有安装说明，将主题文件git clone到/themes文件夹中，并根据提示修改config.toml。\n5.新建博客文章 使用hugo new posts/.md命令以使用archetypes/default.md模板文件在/content/posts目录下新建.md。\n关于模板文件以及相关front matter配置，请参考官方文档Front matter | Hugo\n6.将博客部署到GitHub 在编辑完成后，使用hugo命令进行构建。\nHugo将构建后的网站内容保存在博客根目录下的public文件夹中，接下来使用Git工具将public文件夹的内容提交到仓库。\n也可以选择部署到云服务器上，具体参考Sulv的教程hugo博客部署到腾讯云轻量级服务器 | Sulv’s Blog\n笔者选择使用 Github Pages 发布静态博客\n优点：\n仅需一个 GitHub 账号和简单配置即可将静态博客发布到 GitHub Pages； 没有维护的时间成本, 可以将精力更多的放到博客内容本身上去； 无需备案； 无需 SSL 证书； 缺点：\n访问速度较慢 访问速度较慢 访问速度较慢 7.常用操作 常用命令：\n# 新建文章 hugo new posts/hello_world.md # 文件位置为content/posts/hello_world.md # 构建Hugo网站 hugo # 本地预览 http://localhost:1313/ -D后缀表示应用草稿 hugo server -D # 使用这个命令覆盖生成新的public文件夹 hugo -F --cleanDestinationDir 输入hugo的生成方式只会往public文件夹里添加内容，但是不会删除外部已经不存在而public里面还存在的文件。\n在博客中添加本地图片：\n将图片放到static文件夹下，以static为相对路径进行引用，如![](pic_name.png)。\n推荐使用文件夹对图片进行统一管理，图片放到static/imgs文件夹下，引用格式为![](/imgs/pic_name.png)。\nmarkdown调整图片位置和大小，嵌入HTML代码：\n\u003cdiv align=left\u003e \u003cimg src=https://img-blog.csdnimg.cn/20200822014538211.png width=60% /\u003e \u003c/div\u003e 8.细节优化 Features · adityatelange/hugo-PaperMod Wiki · GitHub\n8.1 自定义博客域名 替换.github.io\n选择在阿里云注册域名，使用cloudflare进行域名解析。\n在Github Pages对应仓库--Settings--Pages--Custom domain中绑定自己购买的域名。\n8.2 引入twikoo评论系统 Twikoo | 一个简洁、安全、免费的静态网站评论系统\nTwikoo Vercel 部署教程_哔哩哔哩_bilibili\n选择部署在Vercel平台，发现国内无法访问\n8.2.1 添加自定义表情包 Twikoo 添加自定义表情包 | 云晓晨CatchYun 给twikoo添加自定义表情包 | 前尘小筑\n8.2.2 表情包资源 表情速查\nGitHub - 2X-ercha/Twikoo-Magic: Twikoo自定义表情列表\ncdn/src/emojis at master · Irithys/cdn · GitHub\n8.2.3 利用 GitHub 标签与仓库镜像添加自定义表情 创建自己的表情预设 | Waline\njsDelivr - A free, fast, and reliable CDN for JS and open source\n8.3 关于博客的图标 iconfont-阿里巴巴矢量图标库\nEmoji表情1\nEmoji表情2\n8.4 修改字体 使用CDN，修改代码字体为JetBrains Mono，博客字体为霞鹭文楷。\n在 PaperMod 博客中设置自定义字体 | Aimer’s Blog\n修改全局字体：\n在 Google Fonts 中查询开源字体，以 JetBrains Mono 为例，Google Fonts 会生成 HTML 和 css ，将 HTML 插入到 layouts/partials/extend_head.html 中，将 CSS 插入到 assets/css/extended/blank.css：\nbody { font-family: \"LXGWWenKai\", sans-serif; } 修改代码字体，将 CSS 插入到 assets/css/extended/code.css：\n.post-content pre,code { font-family: 'JetBrains Mono', monospace; } 8.5 个人博客增加打赏功能 Hugo - 个人博客添加打赏功能\n9.遇到的问题 9.1 解决国内无法访问Vercel 国内访问不了Vercel上绑定的域名?\nvercel部署添加域名国内加速\n9.2 修改js/css文件后本地预览没有更新 浏览器强制刷新，Mac：Command + Shift + R，Windows：Ctrl + Shift + R。\n关闭hugo server，再重新开启，再刷新网站。\n9.3 cdn.jsdelivr.net在国内无法访问 cdn.jsdelivr.net 可能在国内受到污染，可以将 cdn.jsdelivr.net 换成 gcore.jsdelivr.net，或代理cdn.jsdelivr.net使用。\nReference [1] hugo博客搭建 | PaperMod主题 | Sulv’s Blog\n[2] 如何用 GitHub Pages + Hugo 搭建个人博客 · 小绵尾巴\n[3] Github Pages + Hugo 搭建个人博客 - 渣渣的夏天\n[4] Hugo + PaperMod搭建技术博客 | Kunyang’s Blog\n[5] Hugo+PaperMod 双语博客搭建 Home-Info+Profile Mode - YUNYI BLOG\n",
-  "wordCount" : "2397",
+  "articleBody": "0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo\n注意这里要安装extended版本。\n推荐 Windows 用户使用 winget 进行安装，\nWinget is Microsoft’s official free and open-source package manager for Windows.\nTo install the extended edition of Hugo: winget install Hugo.Hugo.Extended\n下载完成后，输入: hugo version 以检查是否安装成功，若出现版本信息则表示安装成功。\n2.创建 GitHub Pages 仓库 2.1 命名GitHub Pages仓库，格式为,其中是自己的 GitHub 的用户名。\n2.2 ✔勾选Public,设置为公开仓库。\n2.3 ✔勾选添加README文件。\n3.使用Hugo新建站点 命令行输入hugo new site 后续命令行指令默认在根目录下运行\n创建完成后，根目录包含以下文件\n. ├── archetypes: default.md #生成博客文章的模版 ├── assets # 存放被 Hugo Pipes 处理的文件 ├── content # 存放markdown文件作为博客内容 ├── data # 存放 Hugo 处理的数据 ├── layouts # 存放布局文件 ├── static # 存放静态文件 图片 CSS JS文件 ├── themes: 存放不同的主题 └── hugo.toml: 博客配置文件支持 JSON YAML TOML 三种格式配置文件 4.选择Hugo主题 为了实现快速搭建节省时间，也推荐直接下载修改后的模板。\nblog-hugo-theme-LoveIt\nsulv-hugo-papermod\n另，从社区中选择主题\nComplete List | Hugo Themes\n推荐主题：\nStack | Hugo Themes\nPaper | Hugo Themes\nGitHub - adityatelange/hugo-PaperMod: A fast, clean, responsive Hugo theme.\n以主题Paper为例，GitHub对应仓库中README文件中有安装说明，将主题文件git clone到/themes文件夹中，并根据提示修改config.toml。\n5.新建博客文章 使用hugo new posts/.md命令以使用archetypes/default.md模板文件在/content/posts目录下新建.md。\n关于模板文件以及相关front matter配置，请参考官方文档Front matter | Hugo\n6.将博客部署到GitHub 在编辑完成后，使用hugo命令进行构建。\nHugo将构建后的网站内容保存在博客根目录下的public文件夹中，接下来使用Git工具将public文件夹的内容提交到仓库。\n也可以选择部署到云服务器上，具体参考Sulv的教程hugo博客部署到腾讯云轻量级服务器 | Sulv’s Blog\n笔者选择使用 Github Pages 发布静态博客\n优点：\n仅需一个 GitHub 账号和简单配置即可将静态博客发布到 GitHub Pages； 没有维护的时间成本, 可以将精力更多的放到博客内容本身上去； 无需备案； 无需 SSL 证书； 缺点：\n访问速度较慢 访问速度较慢 访问速度较慢 7.常用操作 常用命令：\n# 新建文章 hugo new posts/hello_world.md # 文件位置为content/posts/hello_world.md # 构建Hugo网站 hugo # 本地预览 http://localhost:1313/ -D后缀表示应用草稿 hugo server -D # 使用这个命令覆盖生成新的public文件夹 hugo -F --cleanDestinationDir 输入hugo的生成方式只会往public文件夹里添加内容，但是不会删除外部已经不存在而public里面还存在的文件。\n在博客中添加本地图片：\n将图片放到static文件夹下，以static为相对路径进行引用，如![](pic_name.png)。\n推荐使用文件夹对图片进行统一管理，图片放到static/imgs文件夹下，引用格式为![](/imgs/pic_name.png)。\nmarkdown调整图片位置和大小，嵌入HTML代码：\n\u003cdiv align=left\u003e \u003cimg src=https://img-blog.csdnimg.cn/20200822014538211.png width=60% /\u003e \u003c/div\u003e 8.细节优化 Features · adityatelange/hugo-PaperMod Wiki · GitHub\n8.1 自定义博客域名 替换.github.io\n选择在阿里云注册域名，使用cloudflare进行域名解析。\n在Github Pages对应仓库--Settings--Pages--Custom domain中绑定自己购买的域名。\n8.2 引入twikoo评论系统 Twikoo | 一个简洁、安全、免费的静态网站评论系统\nTwikoo Vercel 部署教程_哔哩哔哩_bilibili\n选择部署在Vercel平台，发现国内无法访问\n8.2.1 添加自定义表情包 Twikoo 添加自定义表情包 | 云晓晨CatchYun 给twikoo添加自定义表情包 | 前尘小筑\n8.2.2 表情包资源 表情速查\nGitHub - 2X-ercha/Twikoo-Magic: Twikoo自定义表情列表\ncdn/src/emojis at master · Irithys/cdn · GitHub\n8.2.3 利用 GitHub 标签与仓库镜像添加自定义表情 创建自己的表情预设 | Waline\njsDelivr - A free, fast, and reliable CDN for JS and open source\n8.3 关于博客的图标 iconfont-阿里巴巴矢量图标库\nEmoji表情1\nEmoji表情2\n8.4 修改字体 修改代码字体为JetBrains Mono，博客字体为霞鹭文楷。\n8.4.1 使用CDN 在 PaperMod 博客中设置自定义字体 | Aimer’s Blog\n修改全局字体：\n在 Google Fonts 中查询开源字体，以 JetBrains Mono 为例，Google Fonts 会生成 HTML 和 css ，将 HTML 插入到 layouts/partials/extend_head.html 中，将 CSS 插入到 assets/css/extended/blank.css：\nbody { font-family: \"LXGWWenKai\", sans-serif; } 修改代码字体，将 CSS 插入到 assets/css/extended/code.css：\n.post-content pre,code { font-family: 'JetBrains Mono', monospace; } 如果使用霞鹭文楷字体，请参考GitHub - chawyehsu/lxgw-wenkai-webfont: webfont package for the LXGW WenKai typeface\n8.4.2 使用相对路径引用 和添加本地图片方式类似，将字体文件放到static/fonts文件夹下，在assets/css/extended/font.css中加入：\n@font-face { font-family: \"LXGWWenKai\"; src: url(\"/fonts/LXGWWenKai-Regular.ttf\") format(\"truetype\"); } 然后在对应的assets/css/extended/blank.css中用font-family属性指定使用哪种字体。\n8.5 个人博客增加打赏功能 Hugo - 个人博客添加打赏功能\n9.遇到的问题 9.1 解决国内无法访问Vercel 国内访问不了Vercel上绑定的域名?\nvercel部署添加域名国内加速\n9.2 修改js/css文件后本地预览没有更新 浏览器强制刷新，Mac：Command + Shift + R，Windows：Ctrl + Shift + R。\n关闭hugo server，再重新开启，再刷新网站。\n9.3 cdn.jsdelivr.net在国内无法访问 cdn.jsdelivr.net 可能在国内受到污染，可以将 cdn.jsdelivr.net 换成 gcore.jsdelivr.net，或代理cdn.jsdelivr.net使用。\n9.4 css中@font-face引入字体文件不生效 查看控制台发现控制台警告Failed to decode downloaded font: http://localhost:1313/fonts/LXGWWenKai-Regular.ttf，可能是truetype字体有浏览器兼容问题。\nReference [1] hugo博客搭建 | PaperMod主题 | Sulv’s Blog\n[2] 如何用 GitHub Pages + Hugo 搭建个人博客 · 小绵尾巴\n[3] Github Pages + Hugo 搭建个人博客 - 渣渣的夏天\n[4] Hugo + PaperMod搭建技术博客 | Kunyang’s Blog\n[5] Hugo+PaperMod 双语博客搭建 Home-Info+Profile Mode - YUNYI BLOG\n",
+  "wordCount" : "2644",
   "inLanguage": "zh",
   "datePublished": "2024-07-07T18:19:13+08:00",
   "dateModified": "2024-07-07T18:19:13+08:00",
@@ -119,14 +121,14 @@ var _hmt = _hmt || [];
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://shiziblog.cn/posts/blog/hugo_build/"
+    "@id": "http://localhost:1313/posts/blog/hugo_build/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Shizi's Blog",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://shiziblog.cn/img/shizi.png"
+      "url": "http://localhost:1313/img/shizi.png"
     }
   }
 }
@@ -144,8 +146,8 @@ var _hmt = _hmt || [];
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://shiziblog.cn/" accesskey="h" title="柿子的自留地 (Alt + H)">
-            <img src="https://shiziblog.cn/img/shizi.png" alt="logo" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="柿子的自留地 (Alt + H)">
+            <img src="http://localhost:1313/img/shizi.png" alt="logo" aria-label="logo"
                  height="35">柿子的自留地</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -174,37 +176,37 @@ var _hmt = _hmt || [];
         </div>
         <ul id="menu">
             <li>
-                <a href="https://shiziblog.cn/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
                 <span>🔍 搜索</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/" title="🏠 主页">
+                <a href="http://localhost:1313/" title="🏠 主页">
                 <span>🏠 主页</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/posts" title="📚 文章">
+                <a href="http://localhost:1313/posts" title="📚 文章">
                 <span>📚 文章</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/tags" title="🧩 标签">
+                <a href="http://localhost:1313/tags" title="🧩 标签">
                 <span>🧩 标签</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/archives/" title="⏱️ 时间轴">
+                <a href="http://localhost:1313/archives/" title="⏱️ 时间轴">
                 <span>⏱️ 时间轴</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/about" title="🙋🏻‍♂️ 关于">
+                <a href="http://localhost:1313/about" title="🙋🏻‍♂️ 关于">
                 <span>🙋🏻‍♂️ 关于</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/links" title="🤝 友链">
+                <a href="http://localhost:1313/links" title="🤝 友链">
                 <span>🤝 友链</span>
                 </a>
             </li>
@@ -223,7 +225,7 @@ var _hmt = _hmt || [];
 <article class="post-single">
     <div id="single-content">
         <header class="post-header">
-            <div class="breadcrumbs"><a href="https://shiziblog.cn/">🏠 主页</a>&nbsp;»&nbsp;<a href="https://shiziblog.cn/posts/">📑博客</a>&nbsp;»&nbsp;<a href="https://shiziblog.cn/posts/blog/">🧱 建站</a></div>
+            <div class="breadcrumbs"><a href="http://localhost:1313/">🏠 主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">📑博客</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/blog/">🧱 建站</a></div>
             <h1 class="post-title">
                 Hugo博客搭建记录
             </h1>
@@ -259,14 +261,14 @@ var _hmt = _hmt || [];
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>2397字
+        <span>2644字
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
         <span>
-            阅读时间约5分钟
+            阅读时间约6分钟
             &nbsp;&nbsp;
         </span>
     </span>
@@ -280,8 +282,8 @@ var _hmt = _hmt || [];
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://shiziblog.cn/tags/hugo/" style="color: var(--secondary)!important;">Hugo</a>
-                &nbsp;<a href="https://shiziblog.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="color: var(--secondary)!important;">博客搭建</a>
+                <a href="http://localhost:1313/tags/hugo/" style="color: var(--secondary)!important;">Hugo</a>
+                &nbsp;<a href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="color: var(--secondary)!important;">博客搭建</a>
             </span>
         </span>
     </span>
@@ -302,7 +304,7 @@ var _hmt = _hmt || [];
                             <script>
                                 let url = document.documentURI
                                 
-                                let dnsUrl = "https://shiziblog.cn/"
+                                let dnsUrl = "http://localhost:1313/"
                                 let urlSplit = url.split(dnsUrl)
                                 let finalUrl = urlSplit[1]
                                 if (finalUrl[0] !== '/') {
@@ -377,7 +379,13 @@ var _hmt = _hmt || [];
                 <li>
                     <a href="#83-%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%9a%84%e5%9b%be%e6%a0%87" aria-label="8.3 关于博客的图标">8.3 关于博客的图标</a></li>
                 <li>
-                    <a href="#84-%e4%bf%ae%e6%94%b9%e5%ad%97%e4%bd%93" aria-label="8.4 修改字体">8.4 修改字体</a></li>
+                    <a href="#84-%e4%bf%ae%e6%94%b9%e5%ad%97%e4%bd%93" aria-label="8.4 修改字体">8.4 修改字体</a><ul>
+                        
+                <li>
+                    <a href="#841-%e4%bd%bf%e7%94%a8cdn" aria-label="8.4.1 使用CDN">8.4.1 使用CDN</a></li>
+                <li>
+                    <a href="#842-%e4%bd%bf%e7%94%a8%e7%9b%b8%e5%af%b9%e8%b7%af%e5%be%84%e5%bc%95%e7%94%a8" aria-label="8.4.2 使用相对路径引用">8.4.2 使用相对路径引用</a></li></ul>
+                </li>
                 <li>
                     <a href="#85-%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%a2%9e%e5%8a%a0%e6%89%93%e8%b5%8f%e5%8a%9f%e8%83%bd" aria-label="8.5 个人博客增加打赏功能">8.5 个人博客增加打赏功能</a></li></ul>
                     </ul>
@@ -392,7 +400,9 @@ var _hmt = _hmt || [];
                 <li>
                     <a href="#92-%e4%bf%ae%e6%94%b9jscss%e6%96%87%e4%bb%b6%e5%90%8e%e6%9c%ac%e5%9c%b0%e9%a2%84%e8%a7%88%e6%b2%a1%e6%9c%89%e6%9b%b4%e6%96%b0" aria-label="9.2 修改js/css文件后本地预览没有更新">9.2 修改<code>js/css</code>文件后本地预览没有更新</a></li>
                 <li>
-                    <a href="#93-cdnjsdelivrnet%e5%9c%a8%e5%9b%bd%e5%86%85%e6%97%a0%e6%b3%95%e8%ae%bf%e9%97%ae" aria-label="9.3 cdn.jsdelivr.net在国内无法访问">9.3 cdn.jsdelivr.net在国内无法访问</a></li></ul>
+                    <a href="#93-cdnjsdelivrnet%e5%9c%a8%e5%9b%bd%e5%86%85%e6%97%a0%e6%b3%95%e8%ae%bf%e9%97%ae" aria-label="9.3 cdn.jsdelivr.net在国内无法访问">9.3 cdn.jsdelivr.net在国内无法访问</a></li>
+                <li>
+                    <a href="#94-css%e4%b8%adfont-face%e5%bc%95%e5%85%a5%e5%ad%97%e4%bd%93%e6%96%87%e4%bb%b6%e4%b8%8d%e7%94%9f%e6%95%88" aria-label="9.4 css中@font-face引入字体文件不生效">9.4 css中@font-face引入字体文件不生效</a></li></ul>
                     </ul>
                     </ul>
                 </li>
@@ -472,11 +482,6 @@ var _hmt = _hmt || [];
 </ul>
 <h3 id="1安装hugo">1.安装Hugo<a hidden class="anchor" aria-hidden="true" href="#1安装hugo">#</a></h3>
 <p><a href="https://gohugo.io/installation/">Installation | Hugo</a></p>
-<ul>
-<li>了解基本的终端命令行使用</li>
-<li>安装 Git ，并且了解基本的 Git 知识，推荐学习工具：<a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
-<li>拥有 <a href="https://github.com/">GitHub</a> 账号</li>
-</ul>
 <blockquote>
 <p>注意这里要安装extended版本。</p>
 </blockquote>
@@ -585,7 +590,8 @@ var _hmt = _hmt || [];
 <p><a href="https://emoji.dashgame.com/">Emoji表情1</a></p>
 <p><a href="https://emoji6.com/emojiall/">Emoji表情2</a></p>
 <h5 id="84-修改字体">8.4 修改字体<a hidden class="anchor" aria-hidden="true" href="#84-修改字体">#</a></h5>
-<p>使用CDN，修改代码字体为<code>JetBrains Mono</code>，博客字体为霞鹭文楷。</p>
+<p>修改代码字体为<code>JetBrains Mono</code>，博客字体为霞鹭文楷。</p>
+<h6 id="841-使用cdn">8.4.1 使用CDN<a hidden class="anchor" aria-hidden="true" href="#841-使用cdn">#</a></h6>
 <p><a href="https://aimer.aiursoft.cn/zh/post/web/set-custom-fonts-in-papermod-site/">在 PaperMod 博客中设置自定义字体 | Aimer&rsquo;s Blog</a></p>
 <p>修改全局字体：</p>
 <p>在 <a href="https://fonts.google.com/">Google Fonts</a> 中查询开源字体，以 <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a> 为例，Google Fonts 会生成 HTML 和 css ，将 HTML 插入到 <code>layouts/partials/extend_head.html</code> 中，将 CSS 插入到 <code>assets/css/extended/blank.css</code>：</p>
@@ -596,7 +602,15 @@ var _hmt = _hmt || [];
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">post-content</span> <span style="color:#f92672">pre</span><span style="color:#f92672">,</span><span style="color:#f92672">code</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#39;JetBrains Mono&#39;</span>, <span style="color:#66d9ef">monospace</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h5 id="85-个人博客增加打赏功能">8.5 个人博客增加打赏功能<a hidden class="anchor" aria-hidden="true" href="#85-个人博客增加打赏功能">#</a></h5>
+</span></span></code></pre></div><p>如果使用霞鹭文楷字体，请参考<a href="https://github.com/chawyehsu/lxgw-wenkai-webfont">GitHub - chawyehsu/lxgw-wenkai-webfont: webfont package for the LXGW WenKai typeface</a></p>
+<h6 id="842-使用相对路径引用">8.4.2 使用相对路径引用<a hidden class="anchor" aria-hidden="true" href="#842-使用相对路径引用">#</a></h6>
+<p>和添加本地图片方式类似，将字体文件放到<code>static/fonts</code>文件夹下，在<code>assets/css/extended/font.css</code>中加入：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">font-face</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">font-family</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;LXGWWenKai&#34;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">src</span><span style="color:#f92672">:</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/fonts/LXGWWenKai-Regular.ttf&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;truetype&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>然后在对应的<code>assets/css/extended/blank.css</code>中用<code>font-family</code>属性指定使用哪种字体。</p>
+<h5 id="85-个人博客增加打赏功能">8.5 个人博客增加打赏功能<a hidden class="anchor" aria-hidden="true" href="#85-个人博客增加打赏功能">#</a></h5>
 <p><a href="https://hyrtee.github.io/2023/reward-support/">Hugo - 个人博客添加打赏功能</a></p>
 <h3 id="9遇到的问题">9.遇到的问题<a hidden class="anchor" aria-hidden="true" href="#9遇到的问题">#</a></h3>
 <h6 id="91-解决国内无法访问vercel">9.1 解决国内无法访问<code>Vercel</code><a hidden class="anchor" aria-hidden="true" href="#91-解决国内无法访问vercel">#</a></h6>
@@ -613,6 +627,8 @@ var _hmt = _hmt || [];
 </ul>
 <h6 id="93-cdnjsdelivrnet在国内无法访问">9.3 cdn.jsdelivr.net在国内无法访问<a hidden class="anchor" aria-hidden="true" href="#93-cdnjsdelivrnet在国内无法访问">#</a></h6>
 <p><code>cdn.jsdelivr.net</code> 可能在国内受到污染，可以将 <code>cdn.jsdelivr.net</code> 换成 <code>gcore.jsdelivr.net</code>，或代理<code>cdn.jsdelivr.net</code>使用。</p>
+<h6 id="94-css中font-face引入字体文件不生效">9.4 css中@font-face引入字体文件不生效<a hidden class="anchor" aria-hidden="true" href="#94-css中font-face引入字体文件不生效">#</a></h6>
+<p>查看控制台发现控制台警告<code>Failed to decode downloaded font: http://localhost:1313/fonts/LXGWWenKai-Regular.ttf</code>，可能是<code>truetype</code>字体有浏览器兼容问题。</p>
 <h3 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h3>
 <p>[1] <a href="https://www.sulvblog.cn/posts/blog/build_hugo/">hugo博客搭建 | PaperMod主题 | Sulv&rsquo;s Blog</a></p>
 <p>[2] <a href="https://cuttontail.blog/blog/create-a-wesite-using-github-pages-and-hugo/">如何用 GitHub Pages + Hugo 搭建个人博客 · 小绵尾巴</a></p>
@@ -632,7 +648,7 @@ var _hmt = _hmt || [];
                         <img id="wechat_qr" style="width:180px;
         max-width:100%;
         display:inline-block;
-        margin:.8em 2em 0 2em" src="https://shiziblog.cn/img/wechat_pay.png" alt="WeChat Pay"></a>
+        margin:.8em 2em 0 2em" src="http://localhost:1313/img/wechat_pay.png" alt="WeChat Pay"></a>
                     <p>微信打赏</p>
                 </div>
                 <div id="alipay" style="display: inline-block">
@@ -640,7 +656,7 @@ var _hmt = _hmt || [];
                         <img id="alipay_qr" style="width:180px;
         max-width:100%;
         display:inline-block;
-        margin:.8em 2em 0 2em" src="https://shiziblog.cn/img/alipay.png" alt="Alipay"></a>
+        margin:.8em 2em 0 2em" src="http://localhost:1313/img/alipay.png" alt="Alipay"></a>
                     <p>支付宝打赏</p>
                 </div>
             </div>
@@ -649,7 +665,7 @@ var _hmt = _hmt || [];
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="next" href="https://shiziblog.cn/posts/blog/blog/">
+  <a class="next" href="http://localhost:1313/posts/blog/blog/">
     <span class="title">下一页 »</span>
     <br>
     <span>Blog</span>
@@ -700,7 +716,7 @@ var _hmt = _hmt || [];
         Copyright
         &copy;
         2024-2024
-        <a href="https://shiziblog.cn/" style="color:#939393;">Shizi&#39;s Blog</a>
+        <a href="http://localhost:1313/" style="color:#939393;">Shizi&#39;s Blog</a>
         All Rights Reserved
     
     
