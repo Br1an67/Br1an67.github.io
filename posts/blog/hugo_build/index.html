@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="">
 <meta name="description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 注意这里要安装extended版本。 推荐 Windows 用户使用 winget 进行安装， Winget is Microsoft’s official free and open-source package manager for Windows. To install the extended edition of Hugo: winget install Hugo.Hugo.Extended 下载完成后，输">
 <meta name="author" content="Shizi">
-<link rel="canonical" href="https://shiziblog.cn/posts/blog/hugo_build/">
+<link rel="canonical" href="http://localhost:1313/posts/blog/hugo_build/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://shiziblog.cn/img/shizi.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://shiziblog.cn/img/shizi.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://shiziblog.cn/img/shizi.png">
-<link rel="apple-touch-icon" href="https://shiziblog.cn/img/shizi.png">
-<link rel="mask-icon" href="https://shiziblog.cn/img/shizi.png">
+<link rel="icon" href="http://localhost:1313/img/shizi.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/img/shizi.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/img/shizi.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/img/shizi.png">
+<link rel="mask-icon" href="http://localhost:1313/img/shizi.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://shiziblog.cn/posts/blog/hugo_build/">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/blog/hugo_build/">
 <noscript>
     <style>
         #theme-toggle,
@@ -63,7 +63,7 @@ var _hmt = _hmt || [];
 <meta property="og:title" content="Hugo博客搭建记录" />
 <meta property="og:description" content="0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 注意这里要安装extended版本。 推荐 Windows 用户使用 winget 进行安装， Winget is Microsoft’s official free and open-source package manager for Windows. To install the extended edition of Hugo: winget install Hugo.Hugo.Extended 下载完成后，输" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shiziblog.cn/posts/blog/hugo_build/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/blog/hugo_build/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-07-07T18:19:13+08:00" />
 <meta property="article:modified_time" content="2024-07-07T18:19:13+08:00" />
 
@@ -82,20 +82,20 @@ var _hmt = _hmt || [];
           "@type": "ListItem",
           "position":  1 ,
           "name": "📑博客",
-          "item": "https://shiziblog.cn/posts/"
+          "item": "http://localhost:1313/posts/"
         },
 
         {
           "@type": "ListItem",
           "position":  2 ,
           "name": "🧱 建站",
-          "item": "https://shiziblog.cn/posts/blog/"
+          "item": "http://localhost:1313/posts/blog/"
         }, 
     {
       "@type": "ListItem",
       "position":  3 ,
       "name": "Hugo博客搭建记录",
-      "item": "https://shiziblog.cn/posts/blog/hugo_build/"
+      "item": "http://localhost:1313/posts/blog/hugo_build/"
     }
   ]
 }
@@ -110,7 +110,7 @@ var _hmt = _hmt || [];
   "keywords": [
     ""
   ],
-  "articleBody": "0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo\n注意这里要安装extended版本。\n推荐 Windows 用户使用 winget 进行安装，\nWinget is Microsoft’s official free and open-source package manager for Windows.\nTo install the extended edition of Hugo: winget install Hugo.Hugo.Extended\n下载完成后，输入: hugo version 以检查是否安装成功，若出现版本信息则表示安装成功。\n2.创建 GitHub Pages 仓库 2.1 命名GitHub Pages仓库，格式为,其中是自己的 GitHub 的用户名。\n2.2 ✔勾选Public,设置为公开仓库。\n2.3 ✔勾选添加README文件。\n3.使用Hugo新建站点 命令行输入hugo new site 后续命令行指令默认在根目录下运行\n创建完成后，根目录包含以下文件\n. ├── archetypes: default.md #生成博客文章的模版 ├── assets # 存放被 Hugo Pipes 处理的文件 ├── content # 存放markdown文件作为博客内容 ├── data # 存放 Hugo 处理的数据 ├── layouts # 存放布局文件 ├── static # 存放静态文件 图片 CSS JS文件 ├── themes: 存放不同的主题 └── hugo.toml: 博客配置文件支持 JSON YAML TOML 三种格式配置文件 4.选择Hugo主题 为了实现快速搭建节省时间，也推荐直接下载修改后的模板。\nblog-hugo-theme-LoveIt\nsulv-hugo-papermod\n另，从社区中选择主题\nComplete List | Hugo Themes\n推荐主题：\nStack | Hugo Themes\nPaper | Hugo Themes\nGitHub - adityatelange/hugo-PaperMod: A fast, clean, responsive Hugo theme.\n以主题Paper为例，GitHub对应仓库中README文件中有安装说明，将主题文件git clone到/themes文件夹中，并根据提示修改config.toml。\n5.新建博客文章 使用hugo new posts/.md命令以使用archetypes/default.md模板文件在/content/posts目录下新建.md。\n关于模板文件以及相关front matter配置，请参考官方文档Front matter | Hugo\n6.将博客部署到GitHub 在编辑完成后，使用hugo命令进行构建。\nHugo将构建后的网站内容保存在博客根目录下的public文件夹中，接下来使用Git工具将public文件夹的内容提交到仓库。\n也可以选择部署到云服务器上，具体参考Sulv的教程hugo博客部署到腾讯云轻量级服务器 | Sulv’s Blog\n笔者选择使用 Github Pages 发布静态博客\n优点：\n仅需一个 GitHub 账号和简单配置即可将静态博客发布到 GitHub Pages； 没有维护的时间成本, 可以将精力更多的放到博客内容本身上去； 无需备案； 无需 SSL 证书； 缺点：\n访问速度较慢 访问速度较慢 访问速度较慢 7.常用操作 常用命令：\n# 新建文章 hugo new posts/hello_world.md # 文件位置为content/posts/hello_world.md # 构建Hugo网站 hugo # 本地预览 http://localhost:1313/ -D后缀表示应用草稿 hugo server -D # 使用这个命令覆盖生成新的public文件夹 hugo -F --cleanDestinationDir 输入hugo的生成方式只会往public文件夹里添加内容，但是不会删除外部已经不存在而public里面还存在的文件。\n在博客中添加本地图片：\n将图片放到static文件夹下，以static为相对路径进行引用，如![](pic_name.png)。\n推荐使用文件夹对图片进行统一管理，图片放到static/imgs文件夹下，引用格式为![](/imgs/pic_name.png)。\nmarkdown调整图片位置和大小，嵌入HTML代码：\n\u003cdiv align=left\u003e \u003cimg src=https://img-blog.csdnimg.cn/20200822014538211.png width=60% /\u003e \u003c/div\u003e 8.细节优化 Features · adityatelange/hugo-PaperMod Wiki · GitHub\n8.1 自定义博客域名 替换.github.io\n选择在阿里云注册域名，使用cloudflare进行域名解析。\n在Github Pages对应仓库--Settings--Pages--Custom domain中绑定自己购买的域名。\n8.2 引入twikoo评论系统 Twikoo | 一个简洁、安全、免费的静态网站评论系统\nTwikoo Vercel 部署教程_哔哩哔哩_bilibili\n选择部署在Vercel平台，发现国内无法访问\n8.2.1 （可选）添加自定义表情包 Twikoo 添加自定义表情包 | 云晓晨CatchYun 给twikoo添加自定义表情包 | 前尘小筑\n表情包资源： 表情速查\nGitHub - 2X-ercha/Twikoo-Magic: Twikoo自定义表情列表\ncdn/src/emojis at master · Irithys/cdn · GitHub\n利用 GitHub 标签与仓库镜像添加自定义表情 创建自己的表情预设 | Waline\njsDelivr - A free, fast, and reliable CDN for JS and open source\n8.2.2 （可选）配置邮件通知提醒 配置邮箱通知提醒后，每当游客被博主或其他人回复时，他们就会收到邮箱提示。\n在Twikoo设置的“邮件通知”选项下填入邮箱信息。以Gmail邮箱为例，以下为必填项：\nSENDER_EMAIL: Gmail邮箱地址 SMTP_SERVICE: Gmail SMTP_USER: Gmail邮箱地址 SMTP_PASS: Gmail应用专用密码\n注意SMTP_PASS这里不是填写自己的邮箱密码，而是应用专用密码(App password)。Google现在做了调整，必须要先开启邮箱的手机两步验证才能使用App password。入口比较隐蔽，我建议开启两步验证之后直接在设置里搜索关键词App password或应用密码。具体教程可参考官方问答 。\n进入App password界面后，点Select app - Other，取个名字后就能得到16位的应用专用密码了。\nTwikoo的邮箱设置保存后，可以点击设置最下方的“邮件通知测试”并输入测试邮箱的地址，能收到邮件的话就成功了。\n8.3 关于博客的图标 iconfont-阿里巴巴矢量图标库\nEmoji表情1\nEmoji表情2\n8.4 修改字体 修改代码字体为JetBrains Mono，博客字体为霞鹭文楷。\n8.4.1 方法一：使用CDN 在 PaperMod 博客中设置自定义字体 | Aimer’s Blog\n修改全局字体：\n在 Google Fonts 中查询开源字体，以 JetBrains Mono 为例，Google Fonts 会生成 HTML 和 css ，将 HTML 插入到 layouts/partials/extend_head.html 中，将 CSS 插入到 assets/css/extended/blank.css：\nbody { font-family: \"LXGWWenKai\", sans-serif; } 修改代码字体，将 CSS 插入到 assets/css/extended/code.css：\n.post-content pre,code { font-family: 'JetBrains Mono', monospace; } 如果使用霞鹭文楷字体，请参考GitHub - chawyehsu/lxgw-wenkai-webfont: webfont package for the LXGW WenKai typeface\n8.4.2 方法二：使用相对路径引用 和添加本地图片方式类似，将字体文件放到static/fonts文件夹下，在assets/css/extended/font.css中加入：\n@font-face { font-family: \"LXGWWenKai\"; src: url(\"/fonts/LXGWWenKai-Regular.ttf\") format(\"truetype\"); } 然后在对应的assets/css/extended/blank.css中用font-family属性指定使用哪种字体。\n8.5 个人博客增加打赏功能 Hugo - 个人博客添加打赏功能\n9.遇到的问题 9.1 解决国内无法访问Vercel 国内访问不了Vercel上绑定的域名?\nvercel部署添加域名国内加速\n9.2 修改js/css文件后本地预览没有更新 浏览器强制刷新，Mac：Command + Shift + R，Windows：Ctrl + Shift + R。\n关闭hugo server，再重新开启，再刷新网站。\n9.3 cdn.jsdelivr.net在国内无法访问 cdn.jsdelivr.net 可能在国内受到污染，可以将 cdn.jsdelivr.net 换成 gcore.jsdelivr.net，或代理cdn.jsdelivr.net使用。\n9.4 css中@font-face引入字体文件不生效 查看控制台发现控制台警告Failed to decode downloaded font: http://localhost:1313/fonts/LXGWWenKai-Regular.ttf，可能是truetype字体有浏览器兼容问题。\nReference [1] hugo博客搭建 | PaperMod主题 | Sulv’s Blog\n[2] 如何用 GitHub Pages + Hugo 搭建个人博客 · 小绵尾巴\n[3] Github Pages + Hugo 搭建个人博客 - 渣渣的夏天\n[4] Hugo + PaperMod搭建技术博客 | Kunyang’s Blog\n[5] Hugo+PaperMod 双语博客搭建 Home-Info+Profile Mode - YUNYI BLOG\n",
+  "articleBody": "0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo\n注意这里要安装extended版本。\n推荐 Windows 用户使用 winget 进行安装，\nWinget is Microsoft’s official free and open-source package manager for Windows.\nTo install the extended edition of Hugo: winget install Hugo.Hugo.Extended\n下载完成后，输入: hugo version 以检查是否安装成功，若出现版本信息则表示安装成功。\n2.创建 GitHub Pages 仓库 2.1 命名GitHub Pages仓库，格式为,其中是自己的 GitHub 的用户名。\n2.2 ✔勾选Public,设置为公开仓库。\n2.3 ✔勾选添加README文件。\n3.使用Hugo新建站点 命令行输入hugo new site 后续命令行指令默认在根目录下运行\n创建完成后，根目录包含以下文件\n. ├── archetypes: default.md #生成博客文章的模版 ├── assets # 存放被 Hugo Pipes 处理的文件 ├── content # 存放markdown文件作为博客内容 ├── data # 存放 Hugo 处理的数据 ├── layouts # 存放布局文件 ├── static # 存放静态文件 图片 CSS JS文件 ├── themes: 存放不同的主题 └── hugo.toml: 博客配置文件支持 JSON YAML TOML 三种格式配置文件 4.选择Hugo主题 为了实现快速搭建节省时间，也推荐直接下载修改后的模板。\nblog-hugo-theme-LoveIt\nsulv-hugo-papermod\n另，从社区中选择主题\nComplete List | Hugo Themes\n推荐主题：\nStack | Hugo Themes\nPaper | Hugo Themes\nGitHub - adityatelange/hugo-PaperMod: A fast, clean, responsive Hugo theme.\n以主题Paper为例，GitHub对应仓库中README文件中有安装说明，将主题文件git clone到/themes文件夹中，并根据提示修改config.toml。\n5.新建博客文章 使用hugo new posts/.md命令以使用archetypes/default.md模板文件在/content/posts目录下新建.md。\n关于模板文件以及相关front matter配置，请参考官方文档Front matter | Hugo\n6.将博客部署到GitHub 在编辑完成后，使用hugo命令进行构建。\nHugo将构建后的网站内容保存在博客根目录下的public文件夹中，接下来使用Git工具将public文件夹的内容提交到仓库。\n也可以选择部署到云服务器上，具体参考Sulv的教程hugo博客部署到腾讯云轻量级服务器 | Sulv’s Blog\n笔者选择使用 Github Pages 发布静态博客\n优点：\n仅需一个 GitHub 账号和简单配置即可将静态博客发布到 GitHub Pages； 没有维护的时间成本, 可以将精力更多的放到博客内容本身上去； 无需备案； 无需 SSL 证书； 缺点：\n访问速度较慢 访问速度较慢 访问速度较慢 7.常用操作 常用命令：\n# 新建文章 hugo new posts/hello_world.md # 文件位置为content/posts/hello_world.md # 构建Hugo网站 hugo # 本地预览 http://localhost:1313/ -D后缀表示应用草稿 hugo server -D # 使用这个命令覆盖生成新的public文件夹 hugo -F --cleanDestinationDir 输入hugo的生成方式只会往public文件夹里添加内容，但是不会删除外部已经不存在而public里面还存在的文件。\n在博客中添加本地图片：\n将图片放到static文件夹下，以static为相对路径进行引用，如![](pic_name.png)。\n推荐使用文件夹对图片进行统一管理，图片放到static/imgs文件夹下，引用格式为![](/imgs/pic_name.png)。\nmarkdown调整图片位置和大小，嵌入HTML代码：\n\u003cdiv align=left\u003e \u003cimg src=https://img-blog.csdnimg.cn/20200822014538211.png width=60% /\u003e \u003c/div\u003e 8.细节优化 Features · adityatelange/hugo-PaperMod Wiki · GitHub\n8.1 自定义博客域名 替换.github.io\n选择在阿里云注册域名，使用cloudflare进行域名解析。\n在Github Pages对应仓库--Settings--Pages--Custom domain中绑定自己购买的域名。\n8.2 引入twikoo评论系统 Twikoo | 一个简洁、安全、免费的静态网站评论系统\nTwikoo Vercel 部署教程_哔哩哔哩_bilibili\n选择部署在Vercel平台，发现国内无法访问\n8.2.1 （可选）添加自定义表情包 Twikoo 添加自定义表情包 | 云晓晨CatchYun 给twikoo添加自定义表情包 | 前尘小筑\n表情包资源：\n表情速查\nGitHub - 2X-ercha/Twikoo-Magic: Twikoo自定义表情列表\ncdn/src/emojis at master · Irithys/cdn · GitHub\n利用 GitHub 标签与仓库镜像添加自定义表情 创建自己的表情预设 | Waline\njsDelivr - A free, fast, and reliable CDN for JS and open source\n8.2.2 （可选）配置邮件通知提醒 配置邮箱通知提醒后，每当游客被博主或其他人回复时，他们就会收到邮箱提示。\n在Twikoo设置的“邮件通知”选项下填入邮箱信息。以Gmail邮箱为例，以下为必填项：\nSENDER_EMAIL: Gmail邮箱地址\nSMTP_SERVICE: Gmail\nSMTP_USER: Gmail邮箱地址\nSMTP_PASS: Gmail应用专用密码\n注意SMTP_PASS这里不是填写自己的邮箱密码，而是应用专用密码(App password)。Google现在做了调整，必须要先开启邮箱的手机两步验证才能使用App password。入口比较隐蔽，我建议开启两步验证之后直接在设置里搜索关键词App password或应用密码。具体教程可参考官方问答 。\n进入App password界面后，点Select app - Other，取个名字后就能得到16位的应用专用密码了。\nTwikoo的邮箱设置保存后，可以点击设置最下方的“邮件通知测试”并输入测试邮箱的地址，能收到邮件的话就成功了。\n8.3 关于博客的图标 iconfont-阿里巴巴矢量图标库\nEmoji表情1\nEmoji表情2\n8.4 修改字体 修改代码字体为JetBrains Mono，博客字体为霞鹭文楷。\n8.4.1 方法一：使用CDN 在 PaperMod 博客中设置自定义字体 | Aimer’s Blog\n修改全局字体：\n在 Google Fonts 中查询开源字体，以 JetBrains Mono 为例，Google Fonts 会生成 HTML 和 css ，将 HTML 插入到 layouts/partials/extend_head.html 中，将 CSS 插入到 assets/css/extended/blank.css：\nbody { font-family: \"LXGWWenKai\", sans-serif; } 修改代码字体，将 CSS 插入到 assets/css/extended/code.css：\n.post-content pre,code { font-family: 'JetBrains Mono', monospace; } 如果使用霞鹭文楷字体，请参考GitHub - chawyehsu/lxgw-wenkai-webfont: webfont package for the LXGW WenKai typeface\n8.4.2 方法二：使用相对路径引用 和添加本地图片方式类似，将字体文件放到static/fonts文件夹下，在assets/css/extended/font.css中加入：\n@font-face { font-family: \"LXGWWenKai\"; src: url(\"/fonts/LXGWWenKai-Regular.ttf\") format(\"truetype\"); } 然后在对应的assets/css/extended/blank.css中用font-family属性指定使用哪种字体。\n8.5 个人博客增加打赏功能 Hugo - 个人博客添加打赏功能\n9.遇到的问题 9.1 解决国内无法访问Vercel 国内访问不了Vercel上绑定的域名?\nvercel部署添加域名国内加速\n9.2 修改js/css文件后本地预览没有更新 浏览器强制刷新，Mac：Command + Shift + R，Windows：Ctrl + Shift + R。\n关闭hugo server，再重新开启，再刷新网站。\n9.3 cdn.jsdelivr.net在国内无法访问 cdn.jsdelivr.net 可能在国内受到污染，可以将 cdn.jsdelivr.net 换成 gcore.jsdelivr.net，或代理cdn.jsdelivr.net使用。\n9.4 css中@font-face引入字体文件不生效 查看控制台发现控制台警告Failed to decode downloaded font: http://localhost:1313/fonts/LXGWWenKai-Regular.ttf，可能是truetype字体有浏览器兼容问题。\nReference [1] hugo博客搭建 | PaperMod主题 | Sulv’s Blog\n[2] 如何用 GitHub Pages + Hugo 搭建个人博客 · 小绵尾巴\n[3] Github Pages + Hugo 搭建个人博客 - 渣渣的夏天\n[4] Hugo + PaperMod搭建技术博客 | Kunyang’s Blog\n[5] Hugo+PaperMod 双语博客搭建 Home-Info+Profile Mode - YUNYI BLOG\n",
   "wordCount" : "3040",
   "inLanguage": "zh",
   "datePublished": "2024-07-07T18:19:13+08:00",
@@ -121,14 +121,14 @@ var _hmt = _hmt || [];
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://shiziblog.cn/posts/blog/hugo_build/"
+    "@id": "http://localhost:1313/posts/blog/hugo_build/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Shizi's Blog",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://shiziblog.cn/img/shizi.png"
+      "url": "http://localhost:1313/img/shizi.png"
     }
   }
 }
@@ -146,8 +146,8 @@ var _hmt = _hmt || [];
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://shiziblog.cn/" accesskey="h" title="柿子的自留地 (Alt + H)">
-            <img src="https://shiziblog.cn/img/shizi.png" alt="logo" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="柿子的自留地 (Alt + H)">
+            <img src="http://localhost:1313/img/shizi.png" alt="logo" aria-label="logo"
                  height="35">柿子的自留地</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -176,37 +176,37 @@ var _hmt = _hmt || [];
         </div>
         <ul id="menu">
             <li>
-                <a href="https://shiziblog.cn/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
                 <span>🔍 搜索</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/" title="🏠 主页">
+                <a href="http://localhost:1313/" title="🏠 主页">
                 <span>🏠 主页</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/posts" title="📚 文章">
+                <a href="http://localhost:1313/posts" title="📚 文章">
                 <span>📚 文章</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/tags" title="🧩 标签">
+                <a href="http://localhost:1313/tags" title="🧩 标签">
                 <span>🧩 标签</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/archives/" title="⏱️ 时间轴">
+                <a href="http://localhost:1313/archives/" title="⏱️ 时间轴">
                 <span>⏱️ 时间轴</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/about" title="🙋🏻‍♂️ 关于">
+                <a href="http://localhost:1313/about" title="🙋🏻‍♂️ 关于">
                 <span>🙋🏻‍♂️ 关于</span>
                 </a>
             </li>
             <li>
-                <a href="https://shiziblog.cn/links" title="🤝 友链">
+                <a href="http://localhost:1313/links" title="🤝 友链">
                 <span>🤝 友链</span>
                 </a>
             </li>
@@ -225,7 +225,7 @@ var _hmt = _hmt || [];
 <article class="post-single">
     <div id="single-content">
         <header class="post-header">
-            <div class="breadcrumbs"><a href="https://shiziblog.cn/">🏠 主页</a>&nbsp;»&nbsp;<a href="https://shiziblog.cn/posts/">📑博客</a>&nbsp;»&nbsp;<a href="https://shiziblog.cn/posts/blog/">🧱 建站</a></div>
+            <div class="breadcrumbs"><a href="http://localhost:1313/">🏠 主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">📑博客</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/blog/">🧱 建站</a></div>
             <h1 class="post-title">
                 Hugo博客搭建记录
             </h1>
@@ -282,8 +282,8 @@ var _hmt = _hmt || [];
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
             <span class="post-tags-meta">
-                <a href="https://shiziblog.cn/tags/hugo/" style="color: var(--secondary)!important;">Hugo</a>
-                &nbsp;<a href="https://shiziblog.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="color: var(--secondary)!important;">博客搭建</a>
+                <a href="http://localhost:1313/tags/hugo/" style="color: var(--secondary)!important;">Hugo</a>
+                &nbsp;<a href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="color: var(--secondary)!important;">博客搭建</a>
             </span>
         </span>
     </span>
@@ -304,7 +304,7 @@ var _hmt = _hmt || [];
                             <script>
                                 let url = document.documentURI
                                 
-                                let dnsUrl = "https://shiziblog.cn/"
+                                let dnsUrl = "http://localhost:1313/"
                                 let urlSplit = url.split(dnsUrl)
                                 let finalUrl = urlSplit[1]
                                 if (finalUrl[0] !== '/') {
@@ -371,8 +371,6 @@ var _hmt = _hmt || [];
                         
                 <li>
                     <a href="#821-%e5%8f%af%e9%80%89%e6%b7%bb%e5%8a%a0%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e6%83%85%e5%8c%85" aria-label="8.2.1 （可选）添加自定义表情包">8.2.1 （可选）添加自定义表情包</a></li>
-                <li>
-                    <a href="#%e8%a1%a8%e6%83%85%e5%8c%85%e8%b5%84%e6%ba%90" aria-label="表情包资源：">表情包资源：</a></li>
                 <li>
                     <a href="#%e5%88%a9%e7%94%a8-github-%e6%a0%87%e7%ad%be%e4%b8%8e%e4%bb%93%e5%ba%93%e9%95%9c%e5%83%8f%e6%b7%bb%e5%8a%a0%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e6%83%85" aria-label="利用 GitHub 标签与仓库镜像添加自定义表情">利用 GitHub 标签与仓库镜像添加自定义表情</a></li>
                 <li>
@@ -580,7 +578,7 @@ var _hmt = _hmt || [];
 <h6 id="821-可选添加自定义表情包">8.2.1 （可选）添加自定义表情包<a hidden class="anchor" aria-hidden="true" href="#821-可选添加自定义表情包">#</a></h6>
 <p><a href="https://www.catchyun.com/archives/38.html">Twikoo 添加自定义表情包 | 云晓晨CatchYun</a>
 <a href="https://mnchen.cn/posts/56129.html">给twikoo添加自定义表情包 | 前尘小筑</a></p>
-<h6 id="表情包资源">表情包资源：<a hidden class="anchor" aria-hidden="true" href="#表情包资源">#</a></h6>
+<p>表情包资源：</p>
 <p><a href="https://emotion.xiaokang.me/#/">表情速查</a></p>
 <p><a href="https://github.com/2X-ercha/Twikoo-Magic">GitHub - 2X-ercha/Twikoo-Magic: Twikoo自定义表情列表</a></p>
 <p><a href="https://github.com/Irithys/cdn/tree/master/src/emojis">cdn/src/emojis at master · Irithys/cdn · GitHub</a></p>
@@ -590,10 +588,10 @@ var _hmt = _hmt || [];
 <h6 id="822-可选配置邮件通知提醒">8.2.2 （可选）配置邮件通知提醒<a hidden class="anchor" aria-hidden="true" href="#822-可选配置邮件通知提醒">#</a></h6>
 <p>配置邮箱通知提醒后，每当游客被博主或其他人回复时，他们就会收到邮箱提示。</p>
 <p>在Twikoo设置的“邮件通知”选项下填入邮箱信息。以Gmail邮箱为例，以下为必填项：</p>
-<p><code>SENDER_EMAIL</code>: Gmail邮箱地址
-<code>SMTP_SERVICE</code>: Gmail
-<code>SMTP_USER</code>: Gmail邮箱地址
-<code>SMTP_PASS</code>: Gmail应用专用密码</p>
+<p><code>SENDER_EMAIL</code>: Gmail邮箱地址</p>
+<p><code>SMTP_SERVICE</code>: Gmail</p>
+<p><code>SMTP_USER</code>: Gmail邮箱地址</p>
+<p><code>SMTP_PASS</code>: Gmail应用专用密码</p>
 <p>注意<code>SMTP_PASS</code>这里不是填写自己的邮箱密码，而是<strong>应用专用密码(App password)</strong>。Google现在做了调整，必须要先开启邮箱的手机两步验证才能使用App password。入口比较隐蔽，我建议开启两步验证之后直接在设置里搜索关键词App password或应用密码。具体教程可参考<a href="https://support.google.com/mail/answer/185833?hl=zh-Hans">官方问答 </a>。</p>
 <p>进入App password界面后，点Select app - Other，取个名字后就能得到16位的应用专用密码了。</p>
 <p>Twikoo的邮箱设置保存后，可以点击设置最下方的“邮件通知测试”并输入测试邮箱的地址，能收到邮件的话就成功了。</p>
@@ -660,7 +658,7 @@ var _hmt = _hmt || [];
                         <img id="wechat_qr" style="width:180px;
         max-width:100%;
         display:inline-block;
-        margin:.8em 2em 0 2em" src="https://shiziblog.cn/img/wechat_pay.png" alt="WeChat Pay"></a>
+        margin:.8em 2em 0 2em" src="http://localhost:1313/img/wechat_pay.png" alt="WeChat Pay"></a>
                     <p>微信打赏</p>
                 </div>
                 <div id="alipay" style="display: inline-block">
@@ -668,7 +666,7 @@ var _hmt = _hmt || [];
                         <img id="alipay_qr" style="width:180px;
         max-width:100%;
         display:inline-block;
-        margin:.8em 2em 0 2em" src="https://shiziblog.cn/img/alipay.png" alt="Alipay"></a>
+        margin:.8em 2em 0 2em" src="http://localhost:1313/img/alipay.png" alt="Alipay"></a>
                     <p>支付宝打赏</p>
                 </div>
             </div>
@@ -676,13 +674,6 @@ var _hmt = _hmt || [];
 
         <footer class="post-footer">
             
-<nav class="paginav">
-  <a class="next" href="https://shiziblog.cn/posts/blog/blog/">
-    <span class="title">下一页 »</span>
-    <br>
-    <span>Blog</span>
-  </a>
-</nav>
 
         </footer>
     </div>
@@ -728,7 +719,7 @@ var _hmt = _hmt || [];
         Copyright
         &copy;
         2024-2024
-        <a href="https://shiziblog.cn/" style="color:#939393;">Shizi&#39;s Blog</a>
+        <a href="http://localhost:1313/" style="color:#939393;">Shizi&#39;s Blog</a>
         All Rights Reserved
     
     
