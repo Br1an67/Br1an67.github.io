@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Hugo博客搭建记录 | Shizi&#39;s Blog</title>
+<title>Hugo博客搭建记录 | 柿子的自留地</title>
 <meta name="keywords" content="">
 <meta name="description" content="写在前面 在部署完博客后发现NotionNext，部署同样非常方便，有兴趣的读者可以参考下面链接： Vercel部署NotionNext | NotionNext帮助手册 GitHub - tangly1024/NotionNext: 使用 NextJS &#43; Notion API 实现的，支持多种部署方案的静态博客，无需服务器、零门槛搭建网站 0.运行环境 了解基本的终端命令行使用 安">
 <meta name="author" content="Shizi">
@@ -119,7 +119,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Shizi's Blog",
+    "name": "柿子的自留地",
     "logo": {
       "@type": "ImageObject",
       "url": "https://shiziblog.cn/img/shizi.png"
@@ -734,7 +734,7 @@
         Copyright
         &copy;
         2024-2024
-        <a href="https://shiziblog.cn/" style="color:#939393;">Shizi&#39;s Blog</a>
+        <a href="https://shiziblog.cn/" style="color:#939393;">柿子的自留地</a>
         All Rights Reserved
     
     
@@ -826,11 +826,11 @@
                 e.preventDefault();
                 let htmlData = window.getSelection().toString() +
                     '\r\n\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Shizi's Blog"+'」的原创文章，遵循CC BY-NC-SA 4.0版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"柿子的自留地"+'」的原创文章，遵循CC BY-NC-SA 4.0版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 let textData = window.getSelection().toString() +
                     '\r\n\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Shizi's Blog"+'」的原创文章，遵循CC BY-NC-SA 4.0版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"柿子的自留地"+'」的原创文章，遵循CC BY-NC-SA 4.0版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 clipboardData.setData('text/html', htmlData);
                 clipboardData.setData('text/plain', textData);
@@ -856,7 +856,7 @@
             if ('clipboard' in navigator) {
                 let text = codeblock.textContent +
                     '\r\n————————————————\r\n' +
-                    '版权声明：本文为「'+"Shizi's Blog"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
+                    '版权声明：本文为「'+"柿子的自留地"+'」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。' +
                 '\r\n原文链接：' + location.href;
                 navigator.clipboard.writeText(text);
                 copyingDone();
