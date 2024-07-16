@@ -13,7 +13,7 @@
       <pubDate>Sun, 07 Jul 2024 18:19:13 +0800</pubDate>
       
       <guid>https://shiziblog.cn/posts/blog/hugo_build/</guid>
-      <description>0.运行环境 了解基本的终端命令行使用 安装 Git ，并且了解基本的 Git 知识，推荐学习工具：Learn Git Branching, Git and GitHub learning resources - GitHub Docs 拥有 GitHub 账号 1.安装Hugo Installation | Hugo 注意这里要安装extended版本。 推荐 Windows 用户使用 winget 进行安装， Winget is Microsoft’s official free and open-source package manager for Windows. To install the extended edition of Hugo: winget install Hugo.Hugo.Extended 下载完成后，输</description>
+      <description>写在前面：在部署完博客后发现NotionNext，部署同样非常方便，有兴趣的读者可以参考下面链接： Vercel部署NotionNext | NotionNext帮助手册 GitHub - tangly1024/NotionNext: 使用 NextJS + Notion API 实现的，支持多种部署方案的静态博客，无需服务器、零门槛搭建网站 0.运行环境 了解基本的终端命令行使用</description>
     </item>
     
     <item>
